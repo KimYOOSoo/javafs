@@ -11,19 +11,37 @@
     <!-- 
 
         요소
-        1. 블록레벨요소: h1~h6, p, hr, ul, ol, li, dl, dt, dd, blockquote, address
-        2. 인라인요소: b, strong, em, i, mark, small, sub, sup ins, del, img, br, q, abbr, cite
+        1. 블록레벨요소: 
+        1) 위에서 아래로 배치(세로 배치)
+        2) 와이어 프레임 구현은 블록레벨요소로 한다.
+        3) 블록레벨요소는 블록레벨요소와 인라인요소를 자식으로 가질 수 있다.
+        4) h1~h6, p, hr, ul, ol, li, dl, dt, dd, blockquote, address, div, header, main, section, nav, article, aside, footer,form, fieldset, table. thead, tbody, tfoot,  
+        2. 인라인요소: 
+        1) 왼쪽에서 오른쪽으로 배치(가로 배치)
+        2) 인라인요소는 블록레벨요소를 자식으로 가질 수 없다.
+           (단, a태그는 예외)
+        b, strong, em, i, mark, small, sub, sup ins, del, img, br, q, abbr, cite, a, span, input, label, select, textarea, button, 
 인라인 요소안에는 블록레벨 요소 들어갈 수 없음.
+        와이어프레임은 블록레벨 요소로만 구성
      -->
 
     <h2>블록 레벨 요소</h2>
-    <div>div1</div>
-    <div>div2</div>
-    <div>div3</div>
+    <a href="https://www.naver.com"><h1>ddd</h1></a>
+    
+    <div>
+        <header>header</header>
+        <section>section</section>
+        <article>article</article>
+        <footer>footer</footer>
+    </div>
+
+
 
     <h2>인라인 요소</h2>
-    <span>span1</span>
-    <span>span2</span>
-    <span>span3</span>
+    <span>
+        <span></span>
+        <span>span2</span>
+        <span>span3</span>
+    </div>
 </body>
 </html>
