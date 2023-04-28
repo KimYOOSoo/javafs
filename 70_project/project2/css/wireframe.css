@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+*{padding-left:0; 
+    margin: 0;
+    padding: 0;
+list-style:none;
+}
+ nav h1 {
+    width: 1400px;
+    
+ }
+ nav ul li{
+    width: 520px;
+    float: right;
+ }
+
+.main{
+     margin: 0 auto;
+}
+
+.projects img {width: 100%;}
+
+
+.projects { 
+    width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+   
+    
+    }
+
+    .projects li {
+    float:left;
+    width:360px;
+    height:240px;
+    margin-bottom: 20px;
+}
+
+li:not(:nth-of-type(4n)) {
+    margin-right: 20px;
+}
