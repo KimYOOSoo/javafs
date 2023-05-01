@@ -3,7 +3,7 @@
 *{
 margin: 0;
 padding: 0;
-box-sizing: border-box;
+box-sizing: content-box;
 
 }
 /* header::after, .contents::after, footer::after */
@@ -11,28 +11,25 @@ box-sizing: border-box;
 
 .clearfix::after
 {content:'';
-clear:both;
+
 display: block;}
 
 
 /* 전체 */
 #wrap { 
     width: 1200px;
-    background: yellow;
+    
     margin: 0 auto; 
     /* margin: 0 auto는 가로 가운데 맞춤 */
 
 }
-.logo, nav, #contents div, footer div {
-    float: left
+header, #contents, footer {
+    display: flex;
+    /* float: left */
 }
 
 
 /* 헤더 */
-header{
-   
-    background: lightblue;
-}
 /* 로고 */
 .logo {
     width: 200px;
@@ -56,10 +53,10 @@ nav {
 }
 
 /* 메인 컨텐츠 */
-#contents {
+
    
-    background: lightcyan;
-}
+    
+
 #contents div {
     width: 400px;
     height: 200px;
@@ -76,10 +73,7 @@ nav {
 }
 
 /* 푸터 */
-footer{
-  
-    background:  lightgoldenrodyellow;
-}
+
 .b_logo{
     width:200px;
     height: 100px;

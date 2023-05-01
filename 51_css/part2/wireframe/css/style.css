@@ -1,18 +1,18 @@
 @charset "utf-8";
 
-@charset "utf-8";
-
 /* reset */
 * {
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    
 }
 
 /* common */
 .wrap {
     width:1200px;
     margin: 0 auto;
+    
+
 }
 
 /* header */
