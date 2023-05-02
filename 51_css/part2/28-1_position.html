@@ -10,19 +10,45 @@
             position: relative;
             height:500px;
             background: yellow;
+            
         }
 
         /* .parent의 자식 div를 부모를 기준으로 정중앙 배치하시오. */
         .parent div {
-            width:200px;
+            /* width:200px; */
+            position: absolute;
+            display: inline-block;
+            padding: 16px 50px; 
             /* height:50px; */
             background: red;
+            left: 50%;
+            top: 50%;
+            /* margin-left: -100px;
+            margin-top: -25px; */
+            margin: -25px 0 0 -100px;
+            
+            -moz-transform: translate(-50%, -50%); 
+            -o-transform: translate(-50%, -50%); 
+            -ms-transform: translate(-50%, -50%); 
+            -webkit-transform: translate(-50%, -50%); 
+            transform: translate(-50%, -50%);
+            
+            
+
+
+
+            /* 시험때 translate 사용 가능 */
             /* width의 절반의 음수 값으로 지정한다. */
             /* height의 절반의 음수 값으로 지정한다. */
 
             /* 텍스트 중앙 배치 */
-            text-align: center;
-            line-height: 50px;
+            /* text-align: center; */
+            /* line-height: 50px; */
+            /* 벤더 프리픽스 (접두사)
+            moz: 파이어폭스
+            o: 오페라 브라우저
+            ms: IE
+            webkit: 크롬 사파리 엣지 */
         }
     </style>
 </head>

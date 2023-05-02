@@ -1,71 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시험 전 축제</title>
     <style>
-        .wrap{
-            background: black
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+
         }
-        header { 
-            display: flex;
+        body {
+            color: black;
+            background: black;
         }
-        .logo{
-            
-            }
-        .nav{
-            width: 940px;
-            height: 60px;
-            margin-left: 360px;
-            display:flex;
-            background: orange;
-        }
-        li{
+
+        li {
             list-style: none;
-            align-content: space-evenly;
         }
-        .main{
+        header{
+            height: 64px;
+            background: #666;
+            padding: 0 24px;
+            width: 100%
+        }
+        .logo {
+            float: left
+        }
+
+        nav {
+            background: #999;
+            float: right
+        }
+
+        nav li {
+            display: inline-block
+        }
+        .main video {
+
+            width: 100%;
+            height: 900px;
            
-            width: 1920px;
-            height: 780px;
-            background: yellow;
+            background: #444;
             text-align: center;
             line-height: 390px;
         }
-        .footer{
-            background: green;
+
+        .footer {
+            background: #111;
+            color: white
         }
-    
-        
     </style>
 </head>
+
 <body>
     <!-- header -->
-    <div class="wrap">
-        <header>
-            <div class="logo"><h1><img src="assets/logo.png" alt="logo"></h1>
-            </div>
-            <div class="nav">   
-                <nav>
-                    <ul>
-                        <li>시험전축제</li>
-                        <li>공연자들</li>
-                        <li>공연안내</li>
-                        <li>함께한 사람들</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section>
-            <div class="main"><h3>공연 영상</h3></div>
-        </section>
-        <footer>
-            <div class="footer">
-                <h2>KYS All rights reserved</h2>
-            </div>
-        </footer>
+    <header>
+        <div class="logo">
+            <h1><img src="assets/logo-2.png" alt="logo"></h1>
+        </div>
+        <nav>
+            <ul>
+                <li>시험전축제</li>
+                <li>공연자들</li>
+                <li>공연안내</li>
+                <li>함께한 사람들</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- section1 -->
+    <section id="dream" alt="dream">
+        <div class="main">
+            <h3><video src="/70_project/images/dream.mp4" autoplay controls ></video></h3>
+        </div>
+    </section>
+
+    <!-- section2 -->
+    <section id="event">
+        <ul>
+            <li>정왕본동오케스트라</li>
+            <li>밴드민하</li>
+            <li>즘피플래닛</li>
+        </ul>
+    </section>
+
+
+
+    <footer>
+        <div class="footer">
+            <h2>KYS All rights reserved</h2>
+        </div>
+    </footer>
     </div>
 </body>
+
 </html>
