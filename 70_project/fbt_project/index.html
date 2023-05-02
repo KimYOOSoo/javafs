@@ -7,25 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>시험 전 축제</title>
     <style>
+        /* reset */
         * {
             margin: 0;
             padding: 0;
-            box-sizing: content-box;
+            box-sizing: border-box;
 
         }
+        section {
+            width: 1496px;
+            margin: 0 auto;
+           
+        }
+        section h2 {
+            border-bottom: 1px solid #444;
+            padding-bottom: 3px
+        }
         body {
-            color: black;
-            background: black;
+            color: #000;
+            background: #fff;
         }
 
         li {
             list-style: none;
+            
         }
+
+        a{
+            color:#000
+        }
+
+        #show ul::after, #event ul::after {
+        content:'';
+        clear: both;
+        display: block;}
+        
+        /* header */
         header{
             height: 64px;
             background: #666;
             padding: 0 24px;
-            width: 100%
+            width: 100%;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 99999;
         }
         .logo {
             float: left
@@ -33,25 +59,95 @@
 
         nav {
             background: #999;
-            float: right
+            float: right;
+            display: flex;
+            height: 64px;
+            ;
         }
 
         nav li {
-            display: inline-block
+            display: inline-block;
         }
-        .main video {
-
-            width: 100%;
-            height: 900px;
-           
-            background: #444;
+        /* section1 */
+        #dream {
             text-align: center;
-            line-height: 390px;
+        }
+        #dream h3 {
+            margin-top: 80px;
+            margin-bottom: 64px;
         }
 
+        #dream p {
+            margin-bottom: 16px;
+        }
+        #dream video{
+            background: #444;
+            display: block;
+            margin: 0 auto;
+        }
+        /* section2 */
+        #show h2 {
+            margin-top: 96px;
+            margin-bottom: 48px;
+        }
+        #show li {
+            float: left;
+            margin-right: 196px;
+            margin-bottom: 204px
+            
+        }
+        #show li:nth-child(3) {
+            margin-right: 0px
+        }
+
+       
+        /* section3 */
+
+        #event h2 {
+        margin-bottom: 48px;
+        
+        }
+
+        #event li {
+            float: left;
+            margin-right: 196px;
+            margin-bottom: 64px;
+        }
+
+        #event li:nth-child(3n) {
+            margin-right: 0px;
+        }
+        /* section4 */
+        
+        #party {
+        text-align: center;
+        }
+        #party h2 {
+            margin-top: 64px;
+            margin-bottom: 56px;
+        }
+        #party video {
+            display: block;
+            margin: 0 auto;
+            
+        }
+
+        /* footer */
+        footer h2 {
+            margin-top: 160px;
+            margin-bottom: 56px;
+        }
+        #footer {
+            text-align: center;
+        }
+        #footer img{
+            margin:0 auto
+        }
         .footer {
-            background: #111;
-            color: white
+            background: #000;
+            text-align: center;
+            color: #fff;
+            padding: 48px;
         }
     </style>
 </head>
@@ -60,41 +156,77 @@
     <!-- header -->
     <header>
         <div class="logo">
-            <h1><img src="assets/logo-2.png" alt="logo"></h1>
+            <h1>시험전축제</h1>
         </div>
         <nav>
             <ul>
-                <li>시험전축제</li>
-                <li>공연자들</li>
-                <li>공연안내</li>
-                <li>함께한 사람들</li>
+                <li><a href="#dream">
+                    <h2>시험전축제</h2>
+                </a></li>
+                <li><a href="#show">
+                    <h2>무대공연</h2>
+                </a></li>
+                <li><a href="#event">
+                    <h2>소공연</h2>
+                </a></li>
+                <li><a href="#footer">
+                    <h2>함께한 사람들</h2>
+                </a></li>
             </ul>
         </nav>
     </header>
     <!-- section1 -->
     <section id="dream" alt="dream">
-        <div class="main">
-            <h3><video src="/70_project/images/dream.mp4" autoplay controls ></video></h3>
-        </div>
+    <h3>당신의 꿈</h3>
+    <p>시험에 지진 당신을 위해 <br> -SMPI PLANET-</p>
+    <video src="assets/dream.mp4" controls ></video>
     </section>
 
     <!-- section2 -->
-    <section id="event">
+    <section id="show">
+        <h2>무대 공연</h2>
         <ul>
-            <li>정왕본동오케스트라</li>
-            <li>밴드민하</li>
-            <li>즘피플래닛</li>
+            <li><img src="assets/orchestra.png" alt="orchestra"><h3>정왕청소년오케스트라</h3></li>
+            <li><img src="assets/band.png" alt="band"><h3>밴드민하</h3></li>
+            <li><img src="assets/performance.png" alt="performance"><h3>즘피플래닛</h3></li>
         </ul>
     </section>
 
+    <!-- section3 -->
+    <section id="event">
+        <h2>소공연</h2>
+        <ul>
+            <li><img src="assets/event1.png" alt=""><h3>김채영</h3></li>
+            <li><img src="assets/event2.png" alt=""><h3>김동욱</h3></li>
+            <li><img src="assets/event3.png" alt=""><h3>김지현</h3></li>
+            <li><img src="assets/event4.png" alt=""><h3>차희주</h3></li>
+            <li><img src="assets/event5.png" alt=""><h3>고륜호</h3></li>
+            <li><img src="assets/event6.png" alt=""><h3>문인경</h3></li>
+            <li><img src="assets/event7.png" alt=""><h3>조무강</h3></li>
+            <li><img src="assets/event8.png" alt=""><h3>시화</h3></li>
+            <li><img src="assets/event9.png" alt=""><h3>김혜빈</h3></li>
 
+        </ul>
+    </section>
+<!-- section4 -->
+    <section id="party">
+        <h2>언제든 삶은 즐거울 수 있다</h2>
+        <video src="assets/party.mp4" controls></video>
 
+    </section>
+<!-- fotter -->
     <footer>
+        <section id="footer">
+            <h2>함께한 이들</h2>
+            <img src="assets/people.png" alt="people">
+        </section>
+        
         <div class="footer">
-            <h2>KYS All rights reserved</h2>
+            <h4>KYS All rights reserved</h4>
+            
         </div>
     </footer>
-    </div>
+    
 </body>
 
 </html>
