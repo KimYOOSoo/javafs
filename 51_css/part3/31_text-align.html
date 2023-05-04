@@ -6,7 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
+        /* 속성:값은 블록 요소에 기록하면, 블록 요소 안에 인라인 요소가 정렬된다. */
+        .tal {text-align: left;}
+        .tar {text-align: right;}
+        .tac {
+            text-align: center;}
+        .taj {text-align: justify; word-break: break-all;}
+        .tac span {
+            border: 1px solid red;
+            display: inline;
+            height: 30px;
+            width: 30px;
+        
+            
+            
 
+        }
+        .tac div {
+            display: inline;
+            border: 1px solid black
+        }
     </style>
 </head>
 <body>
@@ -15,5 +34,13 @@
     <p class="tar">text-align은 텍스트의 수평(가로) 정렬 속성으로 block 요소 안에 있는 inline 요소(텍스트, 이미지 등)만을 정렬 한다. 즉, block 요소에만 적용할 수 있다.</p>
     <p class="tac">text-align은 텍스트의 수평(가로) 정렬 속성으로 block 요소 안에 있는 inline 요소(텍스트, 이미지 등)만을 정렬 한다. 즉, block 요소에만 적용할 수 있다.</p>
     <p class="taj">text-align은 텍스트의 수평(가로) 정렬 속성으로 block 요소 안에 있는 inline 요소(텍스트, 이미지 등)만을 정렬 한다. 즉, block 요소에만 적용할 수 있다.</p>
+    <!-- inline요소, 텍스트와 이미지를 정렬시킨다. -->
+    <div class="tac">
+        <img src="/70_project/fbt_project/assets/logo.png" alt="logo">
+        <div>12</div>
+        <span>1234</span>
+        <span>asdf</span>
+    </div>
 </body>
 </html>
+

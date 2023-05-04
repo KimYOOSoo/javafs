@@ -11,13 +11,25 @@
             font-style: italic;
             font-weight: bold;
             font-size: 16px;
-            line-height: 1.6;
+            line-height: 1.6; /* (글자크기의 1.6배) */
             font-family: 'Courier New', Courier, monospace;
         }
 
-        /* font: [스타일] [굵기] 크기[/줄간격] 글꼴; */
-
+        /*             
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: 'Courier New', Courier, monospace;
+            font: [스타일] [굵기] 크기[/줄간격] 글꼴; 
+            크기 / 줄간격 꼭 /를 쓸 것
+        */
         
+        .font2{
+            /* font: italic bold 16px 'Courier New', Courier, monospace;
+ */            
+    font: 16px/1.6 'Courier New' /* 최소 글꼴의 크기와 종류는 반드시 지정 */
+        }
+        /* 크기 줄간격 글꼴순서를 지킬 것 */
     </style>
 </head>
 
