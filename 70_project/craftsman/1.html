@@ -12,7 +12,7 @@
             padding: 0;
             box-sizing: border-box;
             width: 100%;
-        
+
         }
 
         li {
@@ -32,30 +32,63 @@
             height: 100px;
         }
 
-        .container .logo{
+        .container .logo {
             height: 100px;
             margin-left: 0;
             width: 200px;
-            border: black solid 1px;
+            border-right: black solid 1px;
+            text-align: center;
+
         }
-        .container .nav{
+
+        .container .nav {
             height: 100px;
             margin-right: 50px;
             width: 600px;
             margin-left: 350px;
-            border: black solid 1px;
+            border-left: black solid 1px;
+            border-right: black solid 1px;
+            text-align: center;
         }
 
-        .img_slide{
-            margin: 0 auto
-                
+        .img_slide {
+            height: 300px;
+            text-align: center;
+            border-top: black solid 1px;
+        }
+
+        .sec2 {
+            display: flex;
+            height: 200px;
+            
+        }
+        .notice, .banner, .shortcut{
+            width: 400px;
+            text-align: center;
+            border: black solid 1px;
+            border-left: none;
+        }
+
+        .shortcut {
+            border-right: none;
+        }
+
+        .footer{
+            height: 100px;
+            display: flex;
+        }
+        .flogo, .copyright, .sns {
+            width: 400px;
+            border-right: black 1px solid;
+            text-align: center;
+        }
+        .sns {
+            border-right: none;
         }
 
 
 
         /* section1 */
-
-
     </style>
 
 </head>
@@ -66,16 +99,20 @@
     <div class="wrap">
         <header>
             <div class="container">
-                <div class="logo"><h1>로고</h1></div>
-                <div class="nav"><h2>내비게이션</h2></div>
+                <div class="logo">
+                    <h1>로고</h1>
+                </div>
+                <div class="nav">
+                    <h2>내비게이션</h2>
+                </div>
             </div>
         </header>
         <!-- section1 -->
-        <section clss="img_slide">
+        <section class="img_slide">
             <h2>이미지 슬라이드</h2>
         </section>
-            
-        
+
+
         <!-- section2 -->
         <section class="sec2">
             <div class="notice">공지사항/갤러리</div>
