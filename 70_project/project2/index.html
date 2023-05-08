@@ -93,7 +93,6 @@
             height: 75px;
             border: 1px solid #000;
             padding: 0 24px;
-            width: 100%;
             position: fixed;
             top: 0;
             width: 100%;
@@ -110,8 +109,11 @@
             padding: 12px;
             border-top: none;
             text-decoration: underline;
+            text-decoration-style: double;
             text-underline-offset: 7px;
-            text-decoration-color: red;
+            text-decoration-color: red; 
+            text-decoration-thickness: 1px;
+            
         }
 
         h1 {
@@ -163,14 +165,17 @@
         #dream {
             text-align: center;
 
-
+            
         }
-
+        #dream img {
+            float: center;
+        }
         #dream h2 {
             margin-top: 112px;
             margin-bottom: 56px;
             font-family: sunbatang;
-            color: #fff
+            color: #fff;
+            font-size: x-large;
         }
 
 
@@ -178,7 +183,8 @@
             margin-bottom: 16px;
             font-family: sunbatang;
             font-weight: 600;
-            color: #fff
+            color: #fff;
+            font-size: large;  
         }
 
         #dream input {
@@ -226,8 +232,9 @@
         }
 
         #show h3 {
-            padding: 4px 8px;
+            padding: 32px 8px;
             text-align: center;
+            font-size: x-large
         }
 
         #show li #show li:nth-child(3n) {
@@ -246,18 +253,23 @@
             margin-bottom: 24px;
             text-align: center;
         }
+        #event h3 {
+            font-size: x-large;
+            padding: 0px;
+            margin-top: 16px;          
+        }
 
         #event h4 {
             margin-top: 8px;
-
+            font-size: larger;
         }
 
         #event p {
             margin-top: 8px;
             margin-bottom: 40px;
             font-family: pretend;
-            line-height: 1.8em;
-            
+            line-height: 1.8;
+            font-size: large;
         }
 
         #event>p{
@@ -425,6 +437,7 @@
         <section id="dream">
             <h2>당신의 꿈</h2>
             <p>시험에 지진 당신을 위해 <br> -SMPI PLANET-</p>
+            <img src="assets/720 720.png" alt="720">
             <video src="assets/dream.mp4" controls></video>
             <form action="message.php" method="post">
                 <input type="text" name="user_name" placeholder="당신의 꿈은 무엇인가요">

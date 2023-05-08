@@ -13,7 +13,6 @@
             border: 1px solid red;
             margin: 20px;
         }
-
         /* 
             사파리, 크롬: -webkit-
             오페라: -o-
@@ -33,45 +32,28 @@
             
             2) linear-gradient([각도], 색1, 색2, [색3, ...])
                 - 각도: 0~360 (단위: deg=degree) */
-
+        
 
         /* .lg1에 위 blue, 아래 white의 선형 그라디언트를 지정해 보세요. */
         .lg1 {
-            background: -webkit-linear-gradient(blue, white);
+            background: linear-gradient(blue, white);
             background: linear-gradient(to bottom, blue, white);
             background: linear-gradient(180deg, blue, white);
         }
 
         /* .lg2에 왼쪽 아래 #ff0000, 오른쪽 위 #ffffff의 선형 그라디언트를 지정해 보세요. */
         .lg2 {
-            /* background: linear-gradient(to right top, #ff0000, #ffffff); */
-            background: linear-gradient(45deg, #ff0000, #ffffff);
+            background: linear-gradient(to right top, #ff0000, #ffffff);
         }
 
         /* .lg3에 왼쪽 위 blue, 가운데 white, 오른쪽 아래는 yellow의 선형 그라디언트를 지정해 보세요. */
-        /* .lg3 {background: linear-gradient(to right bottom, blue, white, yellow);} */
-        .lg3 {
-            background: linear-gradient(153deg, blue, white, yellow);
-        }
-
+        .lg3 {background: linear-gradient(to right bottom, blue, white, yellow);}
         /* 
             원형(radial) 그라디언트
             1) radial-gradient([모양], 색1, 색2, [색3, ...]);
                 - 모양: circle
         */
         /* .rg에 중심은 white, 바깥쪽은 blue인 원형 모양의 그라디언트를 지정해 보세요. */
-        .rg {
-            /* background: radial-gradient(white, blue,); */
-            background: radial-gradient(circle, white, blue);
-        }
-
-        /* 
-            원뿔형(conic) 그라디언트 
-            conic-gradient(from 각도, 색, 색, 색, 색....) 
-            .cg에 시작은 orange, 중간을 yellow, 끝은 green인 원뿔형 모양의 그라디언트를 지정해 보세요. */
-        .cg {
-            background: conic-gradient(from 90deg,orange, red, green);
-        }
     </style>
 </head>
 
@@ -83,10 +65,7 @@
     <div class="lg3">3</div>
 
     <h2>원형</h2>
-    <div class="rg"></div>
-
-    <h2>원뿔형</h2>
-    <div class="cg"></div>
+    <div class="rg">4</div>
 
 </body>
 

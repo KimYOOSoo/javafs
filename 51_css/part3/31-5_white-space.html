@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
+        /* 
+            white-space: 공간처리;
+                값: noraml, nowrap, wrap, pre-wrp, pre-line
+        */
+
+
+
         /* 자동 줄 바꿈(o), Enter(x), sp/tab(x) */
         .whn {white-space: normal;}
+
+
         /* 자동 줄 바꿈(x), Enter(x), sp/tab(x) */
         .whnw {white-space: nowrap;}
+
+
         /* 자동 줄 바꿈(x), Enter(o), sp/tab(o) */
         .whp {white-space: pre;}
+
+
         /* 자동 줄 바꿈(o), Enter(o), sp/tab(o) */
         .whpw {white-space: pre-wrap;}
+
+
         /* 자동 줄 바꿈(o), Enter(o), sp/tab(x) */
         .whpl {white-space: pre-line;}
     </style>
@@ -21,26 +36,51 @@
 <body>
     <h1>CSS 텍스트 속성</h1>
     <h2>white-space</h2>
-    <p class="whn">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem            ipsum dolor sit. Lorem ipsum dolor sit. 
+    <!-- html은 한칸 이상의 공백은 허용하지 않는다. -->
+    <p class="whn" style="color:red">Lorem
+         ipsum         dolor sit. 
+        Lorem                    ipsum dolor sit. 
         Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem ipsum dolor sit.</p>
-    <p class="whnw">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem            ipsum dolor sit. Lorem ipsum dolor sit. 
         Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem ipsum dolor sit.</p>
-    <p class="whp">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem            ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem ipsum dolor sit.</p>
-    <p class="whpw">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem            ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem ipsum dolor sit.</p>
-    <p class="whpl">Lorem           ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem            ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
-        Lorem ipsum dolor sit.</p>
+        Lorem ipsum dolor sit. Lorem ipsum dolor sit </p>
+
+
+
+
+    <p class="whnw">Lorem
+        ipsum         dolor sit. 
+       Lorem                    ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit </p>
+
+
+
+    <p class="whp" style="color:blue">Lorem
+        ipsum         dolor sit. 
+       Lorem                    ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit </p>
+
+
+
+
+    <p class="whpw" style="color:brown">Lorem
+        ipsum         dolor sit. 
+       Lorem                    ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit </p>
+
+
+
+    <p class="whpl">Lorem
+        ipsum         dolor sit. 
+       Lorem                    ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit. 
+       Lorem ipsum dolor sit. Lorem ipsum dolor sit </p>
 
 </body>
 </html>
