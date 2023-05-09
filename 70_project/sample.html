@@ -29,12 +29,14 @@
         }
         li{
             background: blue;
-            margin: 8px 32px;
+            margin: 8px 32px;}
             
-            
-
-            
+        .text:hover .text{perspective: 800px;
+            transform: scale(3,3,3);
         }
+    
+            
+        
         video {
             height: 100px;
             background: darkmagenta;
@@ -45,8 +47,15 @@
         img {
             background: darkolivegreen;
         }
-        a{
-            background: lightsteelblue;
+        a {
+            background: linear-gradient(0deg, yellow, yellow) no-repeat right bottom / 0 var(--bg-h);
+            transition: background-size 500ms;
+            --bg-h: 100%;
+        }
+
+        a:where(:hover, :focus-visible) {
+            background-size: 100% var(--bg-h);
+            background-position-x: left;
         }
 
         input{
@@ -98,7 +107,7 @@
         <a href="#">이건 a다.</a>
         <input type="text">
         <video src="/70_project/fbt_project/assets/party.mp4" autoplay></video>
-        <p>
+        <div class="text">
             텍스트들 Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis omnis aperiam aliquam sint enim,
             placeat modi maxime veritatis eveniet quo eos temporibus sequi dolorem nam animi nulla exercitationem soluta
             quibusdam ducimus maiores eum? Minus quae consectetur id ea expedita a omnis repellendus. Eveniet libero, earum
@@ -119,7 +128,7 @@
             Dolorem quisquam ex quod veritatis, esse ab amet repellendus velit! Autem numquam ullam consequatur molestias ipsam perspiciatis, corrupti vero labore repellendus inventore eligendi amet eum illum dolorum omnis quas enim!
             Eveniet voluptatum rerum deleniti recusandae odit. Asperiores, debitis ea! Reprehenderit repellendus sunt rem, quos amet nihil illum, incidunt eaque ullam vitae doloremque dolore itaque recusandae reiciendis aperiam, eum assumenda non?
             Explicabo nulla magnam dicta cupiditate repudiandae officia quam quod, repellat dignissimos atque voluptas odio eligendi debitis iusto dolores consequuntur velit labore soluta doloribus deserunt rerum non cumque. Ut, reiciendis aliquam.
-        </p> 
+        </div> 
         <div>이건 div</div>
         <span>이건 span</span>
     </section>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side menu</title>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-size: 1.5rem;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            width: 60px;
+            color: #888
+        }
+
+        .gnb1 span {
+            height: 2px;
+            width: 0;
+            display: block;
+            background: pink;
+            transition: .3s
+        }
+
+         a:hover {
+            color: pink
+        }
+
+
+        a:hover span {
+            width: 100%;
+        }
+
+       .gnb2 a::after {
+            content:'';
+            background: pink;
+            display: block;
+            height: 2px;
+            width: 0;
+        }
+        
+        .gnb2 a:hover::after{
+            width: 60px
+        }
+
+        .gnb2 a::after {
+            content:'';
+            background: pink;
+            display: block;
+            height: 2px;
+            width: 0;
+            transition: .3s;
+        }
+
+        .gnb2 a:hover::after{
+            width: 60px
+        }
+
+        .gnb3 a::after {
+            content:'';
+            background: pink;
+            display: block;
+            height: 2px;
+            transition: .3s;
+            transform: scaleX(0);
+            transform-origin: 50% 0; 
+        }
+
+        .gnb3 a:hover::after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>메인 메뉴1</h1>
+    <p>http://www.ht.co.kr/</p>
+    <div class="gnb1">
+        <a href="#">제품소개<span></span></a>
+    </div>
+    </div>
+    <div class="gnb2">
+        <a href="#">제품소개</a>
+    </div>
+    <div class="gnb3">
+        <a href="#">제품소개</a>
+    </div>
+    
+</body>
+
+</html>
