@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    color: #333;
+    color: #000;
     background: #fff;
 }
 
@@ -34,8 +34,8 @@ li {
 img {
     width: 100%;
     vertical-align: top;
-}
 
+}
 
 nav a {
     text-decoration: none;

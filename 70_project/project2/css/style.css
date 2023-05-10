@@ -44,7 +44,6 @@ header {
 
 header .container {
     display: flex;
-    justify-content: stretch;
 }
 
 .logo {
@@ -158,7 +157,10 @@ nav li {
     
 }
 
-
+#show img:hover{
+    transform: scale(1.1);
+    transition: 0.8s
+}
 
 
 #show p {
@@ -208,6 +210,12 @@ nav li {
     margin-top: 8px;
     font-size: larger;
 }
+
+#event img:hover{
+    transform: scale(1.1);
+    transition: 0.8s
+}
+
 
 #event p {
     margin-top: 8px;
@@ -299,9 +307,10 @@ footer h2 {
     text-align: center;
 }
 
-#footer img {
-    margin: 0 auto;
-    border: #000 1px solid
+.people{
+    width: 992px;
+    text-align: center;
+    display: inline-block;
 }
 
 .contact {
