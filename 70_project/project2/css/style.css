@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* reset */
 * {
     padding: 0px;
@@ -116,6 +117,7 @@ header .container {
 header a {
     text-decoration: none;
 }
+
 .logo {
     padding: 12px;
     text-decoration: underline;
@@ -179,11 +181,11 @@ nav li {
     background-color: black;
     padding-top: 24px;
     padding-bottom: 120px;
-    color:white
+    color: white
 }
 
 
-.wish1{
+.wish1 {
     position: relative;
     left: 600px;
     bottom: -100px;
@@ -200,27 +202,29 @@ nav li {
 }
 
 @keyframes move1 {
-    0%{
-        left:600;
-        
+    0% {
+        left: 600;
+
     }
+
     25% {
         left: 1000px;
     }
 
     50% {
-        left:1200px;
-     }
+        left: 1200px;
+    }
 
     75% {
-        left: 1400px;}
-       
+        left: 1400px;
+    }
+
     100% {
         left: 600px;
     }
 }
 
-.wish2{
+.wish2 {
     position: relative;
     animation-name: move2;
     animation-duration: 5s;
@@ -234,20 +238,23 @@ nav li {
 }
 
 @keyframes move2 {
-    0%{
-        bottom:0;
+    0% {
+        bottom: 0;
 
     }
+
     50% {
-        bottom:500px; 
-        
+        bottom: 500px;
+
     }
+
     100% {
-        bottom:0;
-        right:0;
+        bottom: 0;
+        right: 0;
     }
 }
-.wish3{
+
+.wish3 {
     position: relative;
     animation-name: move3;
     animation-duration: 1s;
@@ -263,15 +270,16 @@ nav li {
 }
 
 @keyframes move3 {
-    0%{
-       top: -800px;
+    0% {
+        top: -800px;
     }
 
     100% {
-        top: -900px ;
+        top: -900px;
     }
 }
-.wish4{
+
+.wish4 {
     position: relative;
     animation-name: move4;
     animation-duration: 3s;
@@ -286,25 +294,28 @@ nav li {
 }
 
 @keyframes move4 {
-    0%{
-        bottom:0;
-        right:0;
+    0% {
+        bottom: 0;
+        right: 0;
     }
+
     50% {
-        bottom:300px; 
+        bottom: 300px;
         right: 200px;
     }
+
     100% {
-        bottom:0;
-        right:0;
+        bottom: 0;
+        right: 0;
     }
 }
-.wish5{
+
+.wish5 {
     position: relative;
     animation-name: move5;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
     color: white;
     width: 440px;
     height: 100px;
@@ -314,26 +325,28 @@ nav li {
 }
 
 @keyframes move5 {
-    0%{
-        bottom:0;
-        right:0;
+    0% {
+        bottom: 0;
+        right: 0;
     }
+
     50% {
-        bottom: -300px; 
+        bottom: -300px;
         right: 200px;
     }
-    100%{
+
+    100% {
         top: 0;
         right: 0;
     }
 }
 
-.wish6{
+.wish6 {
     position: relative;
     animation-name: move6;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
     color: white;
     width: 440px;
     height: 100px;
@@ -344,25 +357,28 @@ nav li {
 }
 
 @keyframes move6 {
-    0%{
-        bottom:0;
-        right:0;
+    0% {
+        bottom: 0;
+        right: 0;
     }
+
     50% {
-        bottom: -100px; 
+        bottom: -100px;
         left: 200px;
     }
-    100%{
+
+    100% {
         top: 0;
         right: 0;
     }
 }
-.wish7{
+
+.wish7 {
     position: relative;
     animation-name: move7;
     animation-duration: 7s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
     color: white;
     width: 440px;
     height: 100px;
@@ -373,24 +389,27 @@ nav li {
 }
 
 @keyframes move7 {
-    0%{
-        bottom:0;
-        
+    0% {
+        bottom: 0;
+
     }
+
     50% {
-        bottom: -100px; 
+        bottom: -100px;
     }
-    100%{
+
+    100% {
         top: 0;
         right: 0;
     }
 }
-.wish8{
+
+.wish8 {
     position: relative;
     animation-name: move8;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
     color: white;
     width: 440px;
     height: 100px;
@@ -401,25 +420,28 @@ nav li {
 }
 
 @keyframes move8 {
-    0%{
-        bottom:0;
-        left:0;
+    0% {
+        bottom: 0;
+        left: 0;
     }
+
     50% {
-        top: -400px; 
+        top: -400px;
         left: -00px;
     }
-    100%{
+
+    100% {
         top: 0;
         right: 100;
     }
 }
-.wish9{
+
+.wish9 {
     position: relative;
     animation-name: move9;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
     color: white;
     width: 440px;
     height: 100px;
@@ -430,15 +452,16 @@ nav li {
 }
 
 @keyframes move9 {
-    0%{
-        bottom:0;
+    0% {
+        bottom: 0;
         left: 1100px;
     }
+
     50% {
         top: -1000px;
-        
+
     }
-    
+
 }
 
 #dream {
@@ -490,10 +513,10 @@ nav li {
     margin-top: 104px;
     margin-bottom: 24px;
     text-align: center;
-    
+
 }
 
-#show li:hover{
+#show li:hover {
     transform: scale(1.1);
     transition: 0.8s
 }
@@ -518,7 +541,7 @@ nav li {
     justify-content: space-evenly;
 }
 
-#show img{
+#show img {
     border-radius: 20px;
 }
 
@@ -556,12 +579,12 @@ nav li {
     font-size: larger;
 }
 
-#event img{
+#event img {
     border-radius: 20px;
 }
 
 
-#event li:hover{
+#event li:hover {
     transform: scale(1.1);
     transition: 0.8s
 }
@@ -583,7 +606,7 @@ nav li {
     height: 580px;
     background: rgb(235, 201, 235);
     border-radius: 20px;
-    
+
 }
 
 
@@ -639,7 +662,7 @@ p {
     text-align: center;
 }
 
-#party video{
+#party video {
     border-radius: 20px;
 }
 
@@ -649,6 +672,28 @@ p {
     width: 30px;
     height: 30px;
 }
+
+#party img {
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative
+}
+
+@keyframes move {
+    0% {
+        rotate: 25deg;
+    }
+    100% {
+        skew: 180deg;
+    }
+}
+
+
+
+
+
 
 #party h2 {
     margin-top: 64px;
@@ -679,14 +724,14 @@ footer h2 {
     text-align: center;
 }
 
-.people{
+.people {
     width: 992px;
     text-align: center;
     display: inline-block;
     transition: 0.8s
 }
 
-.people img{
+.people img {
     border-radius: 20px;
 }
 
