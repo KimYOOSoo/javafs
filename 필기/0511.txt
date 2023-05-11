@@ -1,0 +1,26 @@
+1. css style, reset, typo 주석처리로 하면 안되는지.
+
+2. 이미지 크기 조절 scale 썼을때 (바뀌는 것 transform)
+
+3. transform-style: preserve-3D으로 했을때 바뀌는 단점 (reset에 넣어야하는지)
+
+4. 글자수는 12p
+
+5. 제출용 css는 반반씩 나눠서 소스코드를 적어도 괜찮다. (html은 안된다.)
+
+6. 웹브라우저 실행결과 캡쳐시 윈도우 라인은 안나와도 된다. 스크롤은 표시를 해줄 것
+
+7. 웹브라우저 결과 이미지는 찌그러지지않게 가로 세로 비율 유지할 것. 전체가 나오는 이미지로 제출할 것. 
+
+호버 원본
+/* a {
+    background: linear-gradient(0deg, yellow, yellow) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 500ms;
+    --bg-h: 100%;
+}
+
+a:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+} */
+
