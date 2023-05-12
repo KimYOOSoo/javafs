@@ -724,21 +724,41 @@ footer h2 {
     text-align: center;
 }
 
+.ending{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
 .people {
     width: 992px;
-    text-align: center;
     display: inline-block;
-    transition: 0.8s
 }
 
 .people img {
     border-radius: 20px;
 }
 
+.credit {
+    position: absolute;
+    width: 992px;
+    bottom: 680px;
+    text-align: center;
+    display: inline-block;
+    left: 252px;
+    transition: 2s
+}
 
-.people:hover {
-    transform: scale(1.1);
 
+.credit img {
+    border-radius: 20px;
+}
+
+
+
+.ending:hover .credit{
+    bottom: 0px;
 }
 
 
