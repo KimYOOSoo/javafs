@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+</head>
+<style>
+    *{margin: 0;
+    padding: 0;
+box-sizing: border-box;}
+
+img{
+    width: 100%;
+}
+ 
+#wrap{
+    width:1200px;
+    margin: 0 auto;
+}
+
+#slide{
+    height: 300px;
+    overflow: hidden;
+}
+
+#slide ul {
+    position: relative;
+    left:0;
+    display: flex;
+    width: 400%;
+    animation: slide 9s infinite;
+}
+
+@keyframes slide{
+    0%{left:0;;}
+    5%{left:-100%;}
+    33%{left:-100%;}
+    38%{left:-200%;}
+    66%{left:-200%;}
+    71%{left:-300%;}
+    99.9%{left:-300%;}
+    100%{left:0;}
+    
+}
+</style>
+
+<body>
+    <div id="wrap">
+        <div id="slide">
+            <ul>
+                <li><a href="#"><img src="../../70_project/project4/images/m1.jpg" alt="Daily Item 기획전"></a></li>
+                <li><a href="#"><img src="../../70_project/project4/images/m2.jpg" alt="Daily Item 기획전"></a></li>
+                <li><a href="#"><img src="../../70_project/project4/images/m3.jpg" alt="Daily Item 기획전"></a></li>
+                <li><a href="#"><img src="../../70_project/project4/images/m1.jpg" alt="Daily Item 기획전"></a></li>
+            </ul>
+    </div>
+
+</body>
+
+</html>

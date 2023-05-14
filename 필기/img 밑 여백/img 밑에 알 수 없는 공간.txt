@@ -1,0 +1,13 @@
+img 태그는 text와 마찬가지로 inline요소.
+
+영어는 한글과 다르게 baseline 밑으로 내려가는 일이 발생.
+
+baseline 밑 공간 descender가 필요. (윗 공간 ascender)
+
+해결방법.
+
+1. img display: block으로 바꾼다. (비추천. 레이아웃이 힘들어짐)
+
+2. img { vertical-align: top;} 
+
+3.
