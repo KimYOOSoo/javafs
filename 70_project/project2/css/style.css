@@ -108,14 +108,18 @@ header a {
 
 .logo{
     margin-right: 32px;
+    height: 50%;
 }
 
 
 
 .logo img{
     width: 13vw;
-    display: inline-block;
 }
+
+.logo a{display: flex;
+align-items: center;}
+
 
 nav ul {
     display: flex;
