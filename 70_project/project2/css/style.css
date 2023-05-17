@@ -120,10 +120,6 @@ h1 img {
     vertical-align: center;
 }
 
-
-
-
-
 nav ul {
     display: flex;
     width: 56vw;
@@ -140,10 +136,8 @@ nav a {
 
 
 .lang h2 {
-    margin-top: 8px;
     font-size: 1.46vw;
     display: inline-block;
-
 }
 
 /* section0 */
@@ -159,7 +153,6 @@ nav a {
     padding-top: 24px;
     padding-bottom: 120px;
     color: rgb(255, 255, 255);
-    width:100vw;
 }
 
 .wish1 {

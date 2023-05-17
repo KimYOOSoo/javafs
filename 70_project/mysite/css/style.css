@@ -92,8 +92,9 @@ section h2 + p {
 }
 
 .profile p {
+    word-break: break-all;
     text-align: justify;
-    word-break: break-all; /* 양쪽 정렬할 때 공백을 한칸으로 모두 바꿔줌. 특히 영문일 때 */
+     /* 양쪽 정렬할 때 공백을 한칸으로 모두 바꿔줌. 특히 영문일 때 */
 }   
 .profile p:first-of-type{
     flex:  100%;

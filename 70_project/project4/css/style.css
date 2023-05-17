@@ -142,11 +142,11 @@ nav .sub {
 }
 
 #tab1 a {
-    white-space: nowrap;
     width: 250px;
-    overflow: hidden;
     /* 말줄임 ...효과 */
+    white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
 }
 #tab1 li a:hover {
     color: #333
