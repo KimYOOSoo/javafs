@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 @import url('reset.css');
 @import url('typo.css');
@@ -7,9 +6,10 @@
 
 /* header */
 header {
-    position:fixed;
-    width:100%;
-    z-index: 9999;}
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
 
 header ul {
     height: 54px;
@@ -18,12 +18,15 @@ header ul {
     display: flex;
     align-items: center;
 }
+
 header a {
     padding: 4px 16px;
 }
+
 header a:hover {
     background: #ccc;
 }
+
 header i {
     margin-right: 8px;
 }
@@ -34,6 +37,7 @@ header i {
     background: url(../images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
     height: 930px;
 }
+
 /* 요소를 부모 안에 정가운데 배치 */
 
 /* logo */
@@ -50,50 +54,182 @@ header i {
 .container {
     width: 960px;
     margin: 0 auto;
+    padding-bottom: 81px;
 }
+
+
+
+section h2{
+    margin: top 840px;
+    text-align: center;
+}
+section h2 + p {
+    margin: 27px;
+    text-align: center;
+}
+
+
 
 .parallax {
     background: no-repeat 50% 50%/cover fixed;
-}
-
-/* section2 */
-
-.photo {
-    width: 425px;
-    height: 290px;
-}
-
-/* section3 */
-
-#portfolio ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    height: 410px;
+    position: relative;
     
 }
 
-#portfolio .parallax {
-    background-image: url(../images/parallax2.jpg); 
-    height: 410px;
+.parallax b {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* section2 */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile p {
+    text-align: justify;
+    word-break: break-all; /* 양쪽 정렬할 때 공백을 한칸으로 모두 바꿔줌. 특히 영문일 때 */
+}   
+.profile p:first-of-type{
+    flex:  100%;
+    margin-bottom: 54px;
+    
+}   
+.profile div {
+    flex: 0 0 48%;
+    text-align: center;
+
+}
+.profile p:last-of-type{
+    flex: 0 0 48%;
+}
+
+.photo b {
+    margin-left: 8px;
+}
+
+.photo img {
+    margin-top: 54px;
 }
 
 
+.photo {
+    width: 425px;
+    overflow: hidden;
+    
+}
+
+/* section2 - skill */
+#about h3 {
+    text-align: center;
+    margin: 54px;
+}
+.progress .lst > span{
+    display: inline-block;
+    margin: 16px
+}
+
+.progress .lst div {  
+    background: #eee; 
+}
+
+.progress .lst div span{  
+    height: 34px;
+    background: #555; 
+    text-align: center;
+    display: block;
+}
+.progress .lst:nth-of-type(1) div span{ 
+width: 90%
+}
+.progress .lst:nth-of-type(2) div span{ 
+ width: 85%
+}
+.progress .lst:nth-of-type(3) div span{ 
+ width: 75% 
+}
+
+.counter {
+    background: #616161;
+    color: #fff;
+    display: flex;
+    height: 132px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter span {
+    display: block;
+    text-align: center;
+}
+
+
+/* section3 */
+
+#portfolio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#portfolio .parallax {
+    background-image: url(../images/parallax2.jpg);
+    height: 410px;
+}
+
+#portfolio .container {
+    display: flex;
+}
 /* 
     column count: 12
     max-width: 960px
     1 column width: 69px
     gutter: 12px
 */
-#portfolio li{
+#portfolio li {
     width: 231px;
     height: 162px;
 }
 
 
 /* section4 */
-#contact  .parallax {
+#contact .parallax {
     background-image: url(../images/parallax3.jpg);
     height: 410px;
 }
 
 /* footer */
+footer {
+    text-align: center;
+    padding: 64px 0 81px;
+    background: #457976;
+}
+
+footer:hover {
+    background: #000;
+}
+
+footer .topbtn a {
+    background: #ccc;
+    padding: 8px 16px;
+}
+
+footer .topBtn a:hover {
+    background: #999;
+}
+
+footer .topBtn i {
+    margin-right: 16px;
+}
+
+footer .sns {
+    margin: 12px 0 16px;
+}
+
+
