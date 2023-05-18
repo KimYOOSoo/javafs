@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
-    <script>
-        var a;
-        a = 5
-        var a = 10;
-        var a = 30;
-        a = 40;
-        
-        let b;
-        b= 10;
-        b= 20;
-        b= 40
 
-       const c = 50
-   
-       console.log(b,c);
-       
+<body>
+    <h1>if</h1>
+    <script>
+      var stu_num = prompt ('학생수를 입력하세요')
+      var count = prompt ('한줄에 몇명씩 앉나요')
+      var total_line
+
+    if(stu_num % count ===0) {total_line = parseInt(stu_num/count)}
+    else{total_line = parseInt(stu_num/count) + 1}
+
+    document.write('학생수는' + stu_num + '명 한줄에 앉는 사람은' + count +'명 좌석은 총 ' + total_line + '가 필요합니다')
+
+
     </script>
 </body>
+
 </html>

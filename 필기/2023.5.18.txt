@@ -1,3 +1,2 @@
-1. index part1 width: 100vw로 했을 시에 x축 스크롤바가 생기는 이유
-
-2.
+1. index part1 width: 100vw로 했을 시에 x축 스크롤바가 생기는 이유 = 자식이 너비를 넘어가면 부모는 그 값을 따라간다.
+2. align-items는 flex-wrap:wrap이 없어도 작동 가능하지만 align-content는 flex-wrap을 해야 작동 가능할때가 있다. 줄바꿈.

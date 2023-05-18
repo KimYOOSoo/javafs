@@ -6,21 +6,26 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
 section {
     width: 1496px;
     margin: 0 auto;
 
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     color: #000;
     background: #fff;
 }
+
 a {
     color: #333
 }
+
 li {
     list-style: none;
 }
@@ -89,7 +94,6 @@ li a:hover {
 
 
 /* header */
-
 header .container {
     display: flex;
     align-items: center;
@@ -97,7 +101,7 @@ header .container {
     padding: 0 24px;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 99999;
     display: flex;
     background: #fff;
@@ -107,52 +111,77 @@ header a {
     text-decoration: none;
 }
 
-.logo{
+.logo {
     margin-right: 24px;
-    /* display: flex; */
 }
 
-/* .logo a{display: flex;} */
-
-
 h1 img {
-    width: 13vw;
-    vertical-align: center;
+    width: 240px;
 }
 
 nav ul {
     display: flex;
-    width: 56vw;
     justify-content: space-between;
     margin-left: 112px;
-    margin-right: 14vw;
-    
+    margin-right: 270px;
+    width: 1075px
 }
+
 nav a {
     letter-spacing: 5px;
-    font-size: 1.45vw;
+    font-size: 28px;
     font-family: cafe24;
 }
 
 
 .lang h2 {
-    font-size: 1.46vw;
-    display: inline-block;
+    font-size: 28px;
 }
+
+/* tab */
+.tap {
+    position: fixed;
+    top: 45%;
+    left: 50px
+}
+
+.bk a:hover {
+    background-size: 100% 100%;
+    background-position: left;
+}
+
+
+.bk {
+    display: flex;
+    height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 8px 16px;
+    border: 1px solid #000
+}
+
+.bk a {
+    text-decoration: none;
+    font-family: cafe24;
+    font-size: 1.2rem;
+    color: #333
+}
+
 
 /* section0 */
 .part0 {
     background: url(../images/poster.jpg) no-repeat 50% 50%/contain fixed;
     margin-bottom: 144px;
-    height: 130vh;
+    height: 900px;
+    text-indent: -9999px;
 }
 
 /* section1 */
 .part1 {
-    background-color: rgb(0, 0, 0);
+    background-image: url(../images/dream.png);
     padding-top: 24px;
     padding-bottom: 120px;
-    color: rgb(255, 255, 255);
 }
 
 .wish1 {
@@ -171,6 +200,50 @@ nav a {
     top: -300px;
 }
 
+.yd {text-align: center;
+}
+
+#dream {
+    text-align: center;
+    width: 100%;
+}
+
+#dream img {
+    float: center;
+}
+
+#dream h2 {
+    margin-top: 112px;
+    font-family: sunbatang;
+    color: #fff;
+    letter-spacing: 5px;
+    background-color: #000;
+    font-size: 1.8rem;
+}
+
+#dream p {
+    padding-top: 32px; 
+    margin-bottom: 16px;
+    font-family: sunbatang;
+    font-weight: 600;
+    color: #fff;
+    background: #000;
+    font-size: large;
+}
+
+
+
+#dream input {
+    width: 360px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#dream button {
+    width: 360px;
+    border-radius: 10px;
+}
+
 @keyframes move1 {
     0% {
         left: 600;
@@ -186,7 +259,7 @@ nav a {
     }
 
     75% {
-        left: 1400px;
+        left: 1200px;
     }
 
     100% {
@@ -431,47 +504,10 @@ nav a {
         top: -1000px;
 
     }
-
-}
-
-#dream {
-    text-align: center;
-}
-
-#dream img {
-    float: center;
-}
-
-#dream h2 {
-    margin-top: 112px;
-    margin-bottom: 56px; 
-    font-family: sunbatang;
-    color: #fff;
-    letter-spacing: 5px;
 }
 
 
 
-
-#dream p {
-    margin-bottom: 16px;
-    font-family: sunbatang;
-    font-weight: 600;
-    color: #fff;
-    font-size: large;
-}
-
-#dream input {
-    width: 360px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-#dream button {
-    text-align: center;
-    width: 360px;
-    border-radius: 10px;
-}
 
 
 /* section2 */
@@ -712,15 +748,38 @@ footer h2 {
 }
 
 
-@keyframes slide{
-    0% {left:0;}
-    5% {left:-100%;}
-    33% {left:-100%;}
-    38% {left:-200%;}
-    66% {left:-200% ;}
-    71% {left:-300%;}
-    99.99% {left:-300%;}
-    100% {left:0;}
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    5% {
+        left: -100%;
+    }
+
+    33% {
+        left: -100%;
+    }
+
+    38% {
+        left: -200%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    71% {
+        left: -300%;
+    }
+
+    99.99% {
+        left: -300%;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 
@@ -780,7 +839,7 @@ input {
     background: #deeffa;
 }
 
-.mail{
+.mail {
     height: 80px;
 }
 
@@ -802,32 +861,26 @@ button {
     margin-bottom: 40px;
 }
 
-@media (max-width: 768px) {
-    
-/* header */
-    .logo {margin-top: 16px;
-        margin-right: 0px;}
-    nav ul{margin-left: 64px;
-        margin-right: 80px;
+@media (min-width:1920px) {
+    .tap {
+        display: none;
     }
-    .lang{
-        margin-top: 8px;
+    .part1 {
+        background: #000;
     }
-    
-/* section1 */
-    section {
-        width: 768px;
+
+}
+
+
+@media (max-width: 1919px) {
+    header {
+        display: none;
     }
     .wish{
         display: none;
     }
-    #dream h2,p{
-        width: 50%;
+    #part1{
+        text-align: center;
     }
-   
-    
-}
+}   
 
-@media (max-width: 390px) {
-
-}
