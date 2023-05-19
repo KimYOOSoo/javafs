@@ -10,7 +10,6 @@
 section {
     width: 1496px;
     margin: 0 auto;
-
 }
 
 html {
@@ -69,7 +68,7 @@ a:visited {
 h2 {
     font-family: cafe24;
     letter-spacing: 2px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 h3 {
@@ -79,12 +78,14 @@ h3 {
 
 section h2 {
     border-bottom: 1px solid #f1f1f1;
-    padding-bottom: 3px
+    padding-bottom: 3px;
+    line-height: 2.5;
 }
 
 a {
     background: linear-gradient(0deg, rgb(255, 255, 0), rgb(255, 255, 0)) no-repeat right bottom / 0 100%;
     transition: background-size 500ms;
+    text-decoration: none;
 }
 
 li a:hover {
@@ -95,37 +96,32 @@ li a:hover {
 
 /* header */
 header .container {
-    display: flex;
-    align-items: center;
     border: 1px solid #000;
     padding: 0 24px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 99999;
+    z-index: 9999;
     display: flex;
+    align-items: center;
     background: #fff;
 }
 
-header a {
-    text-decoration: none;
-}
-
-.logo {
-    margin-right: 24px;
-}
-
 h1 img {
-    width: 240px;
+    width: 12.5vt;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
-    margin-left: 112px;
-    margin-right: 270px;
-    width: 1075px
+    width: 100%;    
+    margin-left: 160px;
+    margin-right: 300px;
 }
+
+nav li {
+    margin-left: 96px;
+}
+
 
 nav a {
     letter-spacing: 5px;
@@ -136,36 +132,6 @@ nav a {
 
 .lang h2 {
     font-size: 28px;
-}
-
-/* tab */
-.tap {
-    position: fixed;
-    top: 45%;
-    left: 50px
-}
-
-.bk a:hover {
-    background-size: 100% 100%;
-    background-position: left;
-}
-
-
-.bk {
-    display: flex;
-    height: 220px;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 10px;
-    padding: 8px 16px;
-    border: 1px solid #000
-}
-
-.bk a {
-    text-decoration: none;
-    font-family: cafe24;
-    font-size: 1.2rem;
-    color: #333
 }
 
 
@@ -181,24 +147,11 @@ nav a {
 .part1 {
     background-image: url(../images/dream.png);
     padding-top: 24px;
-    padding-bottom: 120px;
+    overflow: hidden;
+    height: 2120px;
+    width: 100%
 }
 
-.wish1 {
-    position: relative;
-    left: 600px;
-    bottom: -100px;
-    animation-name: move1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 300px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 24px;
-    top: -300px;
-}
 
 .yd {text-align: center;
 }
@@ -206,14 +159,11 @@ nav a {
 #dream {
     text-align: center;
     width: 100%;
-}
-
-#dream img {
-    float: center;
+    overflow: hidden;
 }
 
 #dream h2 {
-    margin-top: 112px;
+    margin-top: 200px;
     font-family: sunbatang;
     color: #fff;
     letter-spacing: 5px;
@@ -222,292 +172,29 @@ nav a {
 }
 
 #dream p {
-    padding-top: 32px; 
-    margin-bottom: 16px;
+    padding-top: 80px; 
+    padding-bottom: 16px;
     font-family: sunbatang;
     font-weight: 600;
     color: #fff;
     background: #000;
-    font-size: large;
+    font-size: 1.3rem;
 }
 
-
+#dream video{
+    border-radius: 20px;
+}
 
 #dream input {
-    width: 360px;
+    width: 400px;
     border-radius: 10px;
     text-align: center;
 }
 
 #dream button {
-    width: 360px;
+    width: 400px;
     border-radius: 10px;
 }
-
-@keyframes move1 {
-    0% {
-        left: 600;
-
-    }
-
-    25% {
-        left: 1000px;
-    }
-
-    50% {
-        left: 1200px;
-    }
-
-    75% {
-        left: 1200px;
-    }
-
-    100% {
-        left: 600px;
-    }
-}
-
-.wish2 {
-    position: relative;
-    animation-name: move2;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 250px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 34px;
-}
-
-@keyframes move2 {
-    0% {
-        bottom: 0;
-
-    }
-
-    50% {
-        bottom: 500px;
-
-    }
-
-    100% {
-        bottom: 0;
-        right: 0;
-    }
-}
-
-.wish3 {
-    position: relative;
-    animation-name: move3;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 250px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 40px;
-    right: -1300px;
-    top: -800px;
-}
-
-@keyframes move3 {
-    0% {
-        top: -800px;
-    }
-
-    100% {
-        top: -900px;
-    }
-}
-
-.wish4 {
-    position: relative;
-    animation-name: move4;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 280px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 28px;
-    top: -800px;
-}
-
-@keyframes move4 {
-    0% {
-        bottom: 0;
-        right: 0;
-    }
-
-    50% {
-        bottom: 300px;
-        right: 200px;
-    }
-
-    100% {
-        bottom: 0;
-        right: 0;
-    }
-}
-
-.wish5 {
-    position: relative;
-    animation-name: move5;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 440px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 29px;
-    top: -1200px;
-}
-
-@keyframes move5 {
-    0% {
-        bottom: 0;
-        right: 0;
-    }
-
-    50% {
-        bottom: -300px;
-        right: 200px;
-    }
-
-    100% {
-        top: 0;
-        right: 0;
-    }
-}
-
-.wish6 {
-    position: relative;
-    animation-name: move6;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 440px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 30px;
-    top: -800px;
-    left: 800px;
-}
-
-@keyframes move6 {
-    0% {
-        bottom: 0;
-        right: 0;
-    }
-
-    50% {
-        bottom: -100px;
-        left: 200px;
-    }
-
-    100% {
-        top: 0;
-        right: 0;
-    }
-}
-
-.wish7 {
-    position: relative;
-    animation-name: move7;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 440px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 24px;
-    top: -400px;
-    left: 1000px;
-}
-
-@keyframes move7 {
-    0% {
-        bottom: 0;
-
-    }
-
-    50% {
-        bottom: -100px;
-    }
-
-    100% {
-        top: 0;
-        right: 0;
-    }
-}
-
-.wish8 {
-    position: relative;
-    animation-name: move8;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 440px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 27px;
-    top: -900px;
-    left: 1100px;
-}
-
-@keyframes move8 {
-    0% {
-        bottom: 0;
-        left: 0;
-    }
-
-    50% {
-        top: -400px;
-        left: -00px;
-    }
-
-    100% {
-        top: 0;
-        right: 100;
-    }
-}
-
-.wish9 {
-    position: relative;
-    animation-name: move9;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    color: rgb(255, 255, 255);
-    width: 440px;
-    height: 100px;
-    font-family: sunbatang;
-    font-size: 27px;
-    top: -900px;
-    left: 1100px;
-}
-
-@keyframes move9 {
-    0% {
-        bottom: 0;
-        left: 1100px;
-    }
-
-    50% {
-        top: -1000px;
-
-    }
-}
-
-
-
 
 
 /* section2 */
@@ -532,16 +219,16 @@ nav a {
 }
 
 #show li {
-    height: 450px;
+    width: 26%;
     background-color: rgb(241, 194, 194);
     border-radius: 20px;
 }
 
 #show p {
     margin-bottom: 48px;
-    font-size: x-large;
     line-height: 1.8em;
     font-family: pretend;
+    font-size: 1.6rem;
 }
 
 #show .container {
@@ -575,6 +262,21 @@ nav a {
     padding-bottom: 8px;
 }
 
+#event .container {
+    margin-bottom: 144px;
+    margin-left: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#event li {
+    background: rgb(235, 201, 235);
+    border-radius: 20px;
+    width: 26%;
+    margin-bottom: 64px;
+}
+
 #event h2 {
     margin-bottom: 24px;
     text-align: center;
@@ -588,7 +290,7 @@ nav a {
 
 #event h4 {
     margin-top: 8px;
-    font-size: larger;
+    font-size: 1.2rem;
 }
 
 #event img {
@@ -596,43 +298,20 @@ nav a {
     border-top-right-radius: 20px;
 }
 
-
 #event li:hover {
     transform: scale(1.1);
     transition: 0.8s
 }
-
 
 #event p {
     margin-top: 8px;
     margin-bottom: 40px;
     font-family: pretend;
     line-height: 1.8;
-    font-size: large;
 }
 
-#event>p {
-    font-size: x-large;
-}
-
-#event li {
-    height: 580px;
-    background: rgb(235, 201, 235);
-    border-radius: 20px;
-
-}
-
-#event>li>p {
-    font-size: large;
-
-}
-
-#event .container {
-    display: flex;
-    width: 1496px;
-    flex-wrap: wrap;
-    margin-bottom: 144px;
-    margin-left: none;
+#event h2~p{
+    font-size: 1.6rem;
 }
 
 #event h3,
@@ -642,19 +321,11 @@ p {
     text-align: center;
 }
 
-#event li {
-    margin-right: 184px;
-    margin-bottom: 64px;
-}
 
 #event li:nth-child(3n) {
     margin-right: 0px;
 }
 
-.event {
-    width: 362px;
-    height: 362px;
-}
 
 /* section4 */
 .part4 {
@@ -829,7 +500,6 @@ footer h2 {
 input {
     margin: 16px 560px;
     padding: 8px;
-    width: 800px;
     height: 40px;
     border: #000 1px solid;
     border-radius: 10px;
@@ -844,7 +514,6 @@ input {
 }
 
 button {
-    width: 800px;
     height: 32px;
     margin: 0 560px;
     border-radius: 5px;
@@ -861,26 +530,34 @@ button {
     margin-bottom: 40px;
 }
 
-@media (min-width:1920px) {
-    .tap {
-        display: none;
+
+@media (max-width: 768px) {
+    
+    header 
+    
+    header a{
+        font-size: 0.8rem;
+    } 
+    
+    .logo{display: none;}
+        
     }
-    .part1 {
-        background: #000;
-    }
+        
+    
+
+    
+
+@media (max-width: 390px ) {
+
 
 }
 
 
-@media (max-width: 1919px) {
-    header {
-        display: none;
-    }
-    .wish{
-        display: none;
-    }
-    #part1{
-        text-align: center;
-    }
-}   
+
+
+  
+    
+   
+
+
 
