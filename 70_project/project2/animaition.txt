@@ -1,0 +1,257 @@
+.wish1{
+    position: relative;
+    left: 30vw
+    bottom: -5vw;
+    animation-name: move1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white;
+    width: 15vw;
+    height: 5vw;
+    font-family: sunbatang;
+    font-size: 1.2vw;
+    top: -5vw;
+}
+
+@keyframes move1 {
+    0%{
+        left:30vw;
+        
+    }
+    25% {
+        left: 50vw
+    }
+
+    50% {
+        left:60vw;
+     }
+
+    75% {
+        left: 70vw;}
+       
+    100% {
+        left: 30vw;
+    }
+}
+
+.wish2{
+    position: relative;
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white;
+    width: 15vw
+    height: 5vw
+    font-family: sunbatang;
+    font-size: 1.7vw;
+}
+
+@keyframes move2 {
+    0%{
+        bottom:0;
+
+    }
+    50% {
+        bottom: 25vw; 
+        
+    }
+    100% {
+        bottom:0;
+        right:0;
+    }
+}
+.wish3{
+    position: relative;
+    animation-name: move3;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white;
+    width: 12.5vw
+    height: 5vw
+    font-family: sunbatang;
+    font-size: 2vw
+    right: -65vw
+    top: -40vw;
+}
+
+@keyframes move3 {
+    0%{
+       top: -40vw;
+    }
+
+    100% {
+        top: -45vw ;
+    }
+}
+.wish4{
+    position: relative;
+    animation-name: move4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white;
+    width: 14vw;
+    height: 5vw;
+    font-family: sunbatang;
+    font-size: 1.4vw
+    top: -50vw;
+}
+
+@keyframes move4 {
+    0%{
+        bottom:0;
+        right:0;
+    }
+    50% {
+        bottom:15vw; 
+        right: 10vw;
+    }
+    100% {
+        bottom:0;
+        right:0;
+    }
+}
+.wish5{
+    position: relative;
+    animation-name: move5;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    color: white;
+    width: 22vw;
+    height: 5vw;
+    font-family: sunbatang;
+    font-size: 1.5vw
+    top: -60vw;
+}
+
+@keyframes move5 {
+    0%{
+        bottom:0;
+        right:0;
+    }
+    50% {
+        bottom: -15vw;
+        right: 10vw;
+    }
+    100%{
+        top: 0;
+        right: 0;
+    }
+}
+
+.wish6{
+    position: relative;
+    animation-name: move6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    color: white;
+    width: 22vw;
+    height: 5vw;
+    font-family: sunbatang;
+    font-size: 1.5vw
+    top: -40vw
+    left: 40vw
+}
+
+@keyframes move6 {
+    0%{
+        bottom:0;
+        right:0;
+    }
+    50% {
+        bottom: -5vw;
+        left: 10vw;
+    }
+    100%{
+        top: 0;
+        right: 0;
+    }
+}
+.wish7{
+    position: relative;
+    animation-name: move7;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    color: white;
+    width: 22vw;
+    height: 5vw;
+    font-family: sunbatang;
+    font-size: 1.25vw
+    top: -20vwpx;
+    left: 50vwpx;
+}
+
+@keyframes move7 {
+    0%{
+        bottom:0;
+        
+    }
+    50% {
+        bottom: -5vw;
+    }
+    100%{
+        top: 0;
+        right: 0;
+    }
+}
+.wish8{
+    position: relative;
+    animation-name: move8;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    color: white;
+    width: 22vw;
+    height: 5vw;
+    font-family: sunbatang;
+    font-size: 27px;
+    top: -45vw;
+    left: 55vw;
+}
+
+@keyframes move8 {
+    0%{
+        bottom:0;
+        left:0;
+    }
+    50% {
+        top: -20vw
+        left: -00px;
+    }
+    100%{
+        top: 0;
+        right: 5vw;
+    }
+}
+.wish9{
+    position: relative;
+    animation-name: move9;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    color: white;
+    width: 22vw;
+    height: 5vw;
+    font-family: sunbatang;
+    font-size: 1.4vw
+    top: -45vw;
+    left: 55vw;
+}
+
+@keyframes move9 {
+    0%{
+        bottom:0;
+        left: 55vw;
+    }
+    50% {
+        top: -50vw;
+        
+    }
+    
+}
