@@ -174,10 +174,6 @@ nav li:nth-of-type(5) {
     width: 100%
 }
 
-.yd {
-    text-align: center;
-}
-
 #dream {
     text-align: center;
     width: 100%;
@@ -206,7 +202,7 @@ nav li:nth-of-type(5) {
 #dream video {
     margin-top: 8.3vw;
     border-radius: 20px;
-    
+    margin-bottom: 0.5vw
 }
 
 #dream input {
@@ -214,12 +210,16 @@ nav li:nth-of-type(5) {
     border-radius: 10px;
     text-align: center;
     font-family: sunbatang;
-    font-size: 1vw
+    font-size: 1vw;
+    display: block;
+    margin: 0 auto;
+    height: 2vw;
 }
 
 #dream button {
+    margin-top: 0.2vw;
     width: 20.8vw;
-    height: 2.5vw;
+    height: 2vw;
     border-radius: 10px;
     font-family: sunbatang;
     font-size: 1vw;
@@ -498,7 +498,7 @@ nav li:nth-of-type(5) {
 }
 #show p {
     margin-bottom: 3vw;
-    line-height: 1.8em;
+    line-height: 1.8;
     font-family: pretend;
     font-size: 1.3vw;
 }
@@ -811,6 +811,8 @@ footer h2 {
     color: #000;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background: rgb(224, 255, 255);
 }
 
@@ -819,23 +821,19 @@ footer h2 {
     color: #000
 }
 
-input {
-    margin: 0.8vw 29.1vw;
+.contact input {
+    margin: 0.5vw; 
     padding: 0.4vw;
     height: 2vw;
     border: #000 1px solid;
     border-radius: 10px;
-}
-
-
-
-
-.contact input {
     background: #deeffa;
     font-family: sunbatang;
+    width: 40vw;
+    font-size: 0.8vw;
 }
 
-.mail {
+.contact .mail{
     height: 4vw;
 }
 
@@ -843,7 +841,8 @@ input {
     height: 3vw;
     margin: 0 29.1vw;
     border-radius: 5px;
-    font-size: 0.8vw
+    font-size: 0.8vw;
+    width: 40vw;
 }
 
 .contact button{
@@ -854,6 +853,7 @@ input {
 .contact h3 {
     font-size: 1.25vw;
     letter-spacing: 5px;
+    margin-bottom: 0;
 }
 
 .contact h4 {
@@ -863,10 +863,18 @@ input {
     font-family: sunbatang;
 }
 
-@media (max-width: 1496px){
-    section{
-        width: 1165px;
-    }
+.map{
+    text-align: center;
+    margin-top: 3vw;
+    width: 31.2vw;
+    height: 23.4vw;
+}
+
+
+@media (max-width:1513px){
+  section{
+    width: 1178.9px;
+  }
 }
 
 @media (max-width: 1400px){
@@ -879,7 +887,7 @@ input {
 
 @media (max-width: 1200px){
     section{
-        width: 962.5px;
+        width: 935px;
     }
 
     #dream input{
@@ -891,14 +899,9 @@ input {
         height: 25px;
     }
 
-}
 
-@media (max-width: 1015px){
-    section{
-        width: 768px;
-    }
-}
 
+}
 
 @media (max-width: 992px) {
     .logo img {
@@ -909,6 +912,30 @@ input {
     }
 
 }
+@media (max-width: 953px){
+    section{
+        width: 742.5px;
+    }
+}
+@media (max-width: 768) {
+
+}
+@media (max-width: 760px){
+    section{
+        width: 592px;
+    }
+}
+@media (max-width: 633px){
+    .part1{ height: 130vw
+    }
+}
+
+@media (max-width: 610px){
+    section{
+        width: 475px;
+    }
+}
+
 
 @media (max-width: 576px) {
     header {
@@ -916,7 +943,13 @@ input {
     }
     #header2 {
         display: flex;
-
-
+    }
+}
+@media(max-width: 475px){
+    section{
+        width: 370px;
+    }
+    #event .container {
+        flex-wrap: wrap;
     }
 }
