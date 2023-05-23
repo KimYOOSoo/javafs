@@ -77,7 +77,7 @@ h3 {
 }
 
 section h2 {
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #333;
     line-height: 3;
 }
 
@@ -484,7 +484,7 @@ nav li:nth-of-type(5) {
 /* section2 */
 
 .part2 {
-    background: rgb(240, 128, 128);
+    background: rgb(255, 237, 153);
     padding-top: 1.25vw;
     padding-bottom: 3vw;
 }
@@ -494,6 +494,7 @@ nav li:nth-of-type(5) {
     margin-bottom: 3vw;
     text-align: center;
     letter-spacing: 10px;
+    
 
 }
 #show p {
@@ -531,7 +532,7 @@ nav li:nth-of-type(5) {
 }
 
 #show li {   
-    background-color: rgb(241, 194, 194);
+    background-color: rgb(247, 218, 88);
     border-radius: 20px;
     width: 26%;
 }
@@ -558,7 +559,7 @@ nav li:nth-of-type(5) {
 
 /* section3 */
 .part3 {
-    background: rgb(238, 130, 238);
+    background: rgb(246, 184, 184);
     padding-top: 6.25vw;
     padding-bottom: 0.4vw;
 }
@@ -572,7 +573,7 @@ nav li:nth-of-type(5) {
 }
 
 #event li {
-    background: rgb(235, 201, 235);
+    background: rgb(255, 193, 227);
     border-radius: 20px;
     width: 26%;
     margin-bottom: 3vw;
@@ -638,7 +639,7 @@ p {
 
 /* section4 */
 .part4 {
-    background: rgb(255, 160, 122);
+    background: rgb(172, 102, 204);
     padding-top: 6vw;
     padding-bottom: 9.5vw;
 }
@@ -704,10 +705,10 @@ p {
     text-decoration-color: #000
 }
 
+/* section5 */
 
-/* footer */
 .part5 {
-    background: rgb(135, 206, 250);
+    background: rgb(59, 20, 167);
     padding-top: 1.6vw;
     padding-bottom: 8.3vw;
 
@@ -717,6 +718,7 @@ footer h2 {
     margin-top: 7.5vw;
     margin-bottom: 2.9vw;
     letter-spacing: 10px;
+
 }
 
 #footer {
@@ -724,6 +726,7 @@ footer h2 {
 }
 
 .ending {
+    margin-top: 3vw;
     position: relative;
     text-align: center;
     display: inline-block;
@@ -789,10 +792,11 @@ footer h2 {
     left: 0px;
     transition-timing-function: ease-out;
     transition: 2s;
+    
 }
 
 .credit img {
-    border-radius: 10px;
+    border-radius: 20px;
     opacity: 70%;
 }
 
@@ -804,45 +808,82 @@ footer h2 {
     animation-play-state: paused;
 }
 
+/* footer */
 
-.contact {
-    background: #fff;
-    text-align: center;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(224, 255, 255);
+#bk4 { height: 5vw;}
+
+
+footer{
+    background: #000;
+}
+footer h3 {
+    text-align: center; 
+    padding: 3vw;
+    color: #fff;
+    letter-spacing: 10px;
 }
 
-.contact h3 {
-    margin: 3.75vw;
-    color: #000
+.contact {
+    color: #fff;
+    display: flex;
+    margin-left: 16vw;
+}
+
+.map{
+    margin-right: 3vw;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.address p{
+    margin: 0;
+    text-align: left;
+    font-family: sunbatang;
+    line-height: 1.8rem;
+}
+
+.address a{
+    font-family: sunbatang;
+    color:#fff
+}
+
+.address a:visited{
+    color: #fff
 }
 
 .contact input {
-    margin: 0.5vw; 
+    margin: 0.3vw; 
     padding: 0.4vw;
     height: 2vw;
-    border: #000 1px solid;
+    border: #fff 1px solid;
     border-radius: 10px;
     background: #deeffa;
     font-family: sunbatang;
-    width: 40vw;
+    width: 12vw;
     font-size: 0.8vw;
+
 }
 
-.contact .mail{
-    height: 4vw;
+.contact textarea{
+    border-radius: 10px;
+    background: #deeffa;
+    font-family: sunbatang;
+    font-size: 0.8vw;
+    border: 1px solid #fff;
+    margin: 0.3vw; 
+    padding: 0.4vw;
+    width: 24vw;
 }
 
 .contact button {
-    height: 3vw;
-    margin: 0 29.1vw;
+    height: 2vw;
     border-radius: 5px;
     font-size: 0.8vw;
-    width: 40vw;
+    margin: 0.3vw; 
+    padding: 0.4vw;
+    width: 24vw;
 }
 
 .contact button{
@@ -863,12 +904,7 @@ footer h2 {
     font-family: sunbatang;
 }
 
-.map{
-    text-align: center;
-    margin-top: 3vw;
-    width: 31.2vw;
-    height: 23.4vw;
-}
+
 
 
 @media (max-width:1513px){
@@ -898,9 +934,6 @@ footer h2 {
         width: 250px;
         height: 25px;
     }
-
-
-
 }
 
 @media (max-width: 992px) {
@@ -941,8 +974,8 @@ footer h2 {
     }
     #header2 {
         display: flex;
-    }
-}
+    }}
+
 @media(max-width: 475px){
     section{
         width: 370px;
