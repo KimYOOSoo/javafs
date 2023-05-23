@@ -20,7 +20,16 @@
                 - 자바스크립트 모든 영역에서 사용할 수 있는 변수
         */
 
+        //전역변수
+        var a = 10;
 
+        function myfn() {
+            var a = 5; //지역변수
+            document.write('내부a = ' + a, '<br>');
+        }
+        
+        myFn();
+        document.write('전역변수a =' + a, '<br>');
 
     </script>
 </body>

@@ -13,8 +13,9 @@
     <div id="galleryZone">
         <p>
             <!-- 인라인 스크립트 -->
-            <button onclick="gallery(0);">이전</button>
-            <button onclick="gallery(1);">다음</button>
+            <button onclick="gallery(1);">1</button>
+            <button onclick="gallery(2);">2</button>
+            <button onclick="gallery(3);">3</button>
         </p>
         <p><img src="../assets/pic_1.jpg" alt="" id="photo"></p>
     </div>
@@ -68,20 +69,8 @@
         const imgTag = document.getElementById('photo');
 
         //함수
-        function gallery(direct) { 
-            if(direct) { 
-                //다음 버튼
-                if (num === 10) return;
-                num++;
-                console.log(num)
-            }else {
-                //이전 버튼
-                if (num === 1) return;
-                num--;
-                console.log(num)
-            }
-            imgTag.setAttribute('src', '../assets/pic_'+ num + '.jpg')
-        }
+        function gallery(direct) { imgTag.setAttribute('src', '../assets/pic_' + direct + '.jpg');}
+          
        
         
         document.write(num);

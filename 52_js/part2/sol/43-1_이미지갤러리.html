@@ -30,7 +30,7 @@
             함수 호출
                 var 변수 = 함수명();
         */
-
+        var imgTag = document.getElementById('photo');
         var num = 1;
         function gallery(direct) {
             if (direct) {
@@ -40,9 +40,7 @@
                 if (num == 1) return;
                 num--;
             }
-
-            var imgTag = document.getElementById('photo');
-            imgTag.setAttribute('src', '../assets/pic_' + num + '.jpg');
+            imgTag.setAttribute('src', '../assets/pic_'+ num + '.jpg');
         }
     </script>
 </body>
