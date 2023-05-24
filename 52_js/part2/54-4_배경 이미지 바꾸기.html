@@ -7,10 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+JS</title>
 </head>
-
+<style>
+    div{
+        background-image: url(../assets/pic_1.jpg);
+        background-color: ;
+    }
+</style>
 <body>
     <h1>버튼 클릭 시 배경색 바꾸기</h1>
-    <button onclick="changeColor();">배경색 바꾸기</button>
+    <button onclick="changeColor();">이미지 바꾸기</button>
+    <div></div>
     <script>
         /* 
             함수 정의
@@ -25,7 +31,7 @@
             문서객체.style.css스타일 = 값; 문서 객체에 CSS 스타일 적용
         */
 
-        var color = ['white', 'yellow', 'aqua', 'purple'];
+        var color = ["../assets/pic_1.jpg", "../assets/pic_2.jpg", "../assets/pic_3.jpg" ,  "../assets/pic_.jpg"];
         // color[0] = 'white' , 
         // color[1] = 'yellow' , 
         // color[2] = 'aqua' , 
@@ -39,8 +45,9 @@
                 i = 0;
             }
 
-            var bodyTag = document.querySelector('body');
-            bodyTag.style.backgroundColor = color[i];
+            var divTag = document.querySelector('div');
+            bodyTag.style.background = color[i];
+            bodyTag.innerHtml = '<img src="../assets
         }
     </script>
 </body>

@@ -11,7 +11,7 @@
 </head>
 <body>
     <h1>랜덤 이미지</h1>
-    <span></span><button onclick="rdImg()">랜덤 이미지 버튼</button>
+    <span></span><button onclick="rdImg()">램덤 이미지 버튼</button>
     <div>
         <img src="../assets/pic_1.jpg" alt="랜덤 이미지">
     </div>
@@ -19,10 +19,9 @@
     <script>
         const imgTag = document.querySelector('img');
         const spanTag = document.querySelector('span');
-        // 1~10 사이 정수
         
-
         function rdImg(){
+            // 1~10 사이 정수
             let num = Math.floor(Math.random() * 10) + 1;
             imgTag.setAttribute('src', '../assets/pic_' + num + '.jpg');
 
