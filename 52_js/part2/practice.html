@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="#">
+    <style>
+
+    </style>
 </head>
+
 <body>
+    <h1>일정 시간 간격으로 값 증감 시키기</h1>
+    <p>콘솔패널을 열어 확인하세요</p>
+    <button id="btn1">증가 실행</button>
+    <button id="btn2">증가 정지</button>
+    <button id="btn3">감소 실행</button>
+    <button id="btn4">감소 정지</button>
+
+    
+    
+    
+    
     <script>
-        switch (game) {
-        case '가위': 
-        gameNum = 1; break
-        case '바위':
-        gameNum = 2; break
-        case '보' :
-        gameNum = 3; break
-        default: alert ('잘못 작성했습니다');
-        location.reload();
+    
+    let increase = 0
+        decrease = 0
+    
+    const btn1 = document.getElementById('btn1')
+    const btn2 = document.getElementById('btn2')
+    const btn3 = document.querySelector('#btn3')
+    const btn4 = document.querySelector('#btn4')
+
+
+    let auto1
+
+    btn1.onclick = function(){
+        auto1 = setInterval (add, 1000)
+    };
+    btn2.onclick = function(){
+        clearInterval (auto1)
+    };
+    
+    btn3.onclick = play;
+
+    btn4.onclick = stop
+
+    function play(){
+        auto1 = setInterval(sub, 1000);
     }
-        var com = Math.ceil(Math.random() * 3);
-        document.write()
+    function stop(){
+        clearInterval(auto1);
+    }
+    
+    function add() {
+        increase++;
+        console.log(increase);
+    }
+
+    function sub() {
+        decrease--;
+        console.log(decrease)
+    }
+
+    console.log(increase)
+        
+
     </script>
 </body>
+
 </html>

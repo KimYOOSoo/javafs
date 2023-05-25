@@ -8,15 +8,11 @@
     <title>HTML+JS</title>
 </head>
 <style>
-    div{
-        background-image: url(../assets/pic_1.jpg);
-        background-color: ;
-    }
+ 
 </style>
 <body>
-    <h1>버튼 클릭 시 배경색 바꾸기</h1>
-    <button onclick="changeColor();">이미지 바꾸기</button>
-    <div></div>
+    <h1>버튼 클릭 시 배경이미지 바꾸기 ha</h1>
+    <button onclick="changeBgimg();">이미지 바꾸기</button>
     <script>
         /* 
             함수 정의
@@ -31,7 +27,7 @@
             문서객체.style.css스타일 = 값; 문서 객체에 CSS 스타일 적용
         */
 
-        var color = ["../assets/pic_1.jpg", "../assets/pic_2.jpg", "../assets/pic_3.jpg" ,  "../assets/pic_.jpg"];
+        const bg = ['url(../assets/pic_1.jpg)', 'url(../assets/pic_2.jpg)', 'url(../assets/pic_3.jpg)',  'url(../assets/pic_4.jpg)']
         // color[0] = 'white' , 
         // color[1] = 'yellow' , 
         // color[2] = 'aqua' , 
@@ -39,15 +35,15 @@
 
         var i = 0;
 
-        function changeColor() {
+        function changeBgimg() {
             i++;
-            if (i >= color.length) {
+            if (i >= bg.length) {
                 i = 0;
             }
 
-            var divTag = document.querySelector('div');
-            bodyTag.style.background = color[i];
-            bodyTag.innerHtml = '<img src="../assets
+            var bodyTag = document.querySelector('body');
+            bodyTag.style.background = 'no-repeat 0 0/cover';      
+            bodyTag.style.backgroundImage = bg[i];     
         }
     </script>
 </body>

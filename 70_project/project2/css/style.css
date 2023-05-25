@@ -829,8 +829,9 @@ footer h3 {
     margin-left: 16vw;
 }
 
-.map{
+.map {
     margin-right: 3vw;
+   
 }
 .address {
     display: flex;
@@ -974,8 +975,8 @@ footer h3 {
     }
     #header2 {
         display: flex;
-    }}
-
+    }} 
+  
 @media(max-width: 475px){
     section{
         width: 370px;
