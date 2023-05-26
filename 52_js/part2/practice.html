@@ -8,67 +8,187 @@
     <title>Document</title>
     <link rel="shortcut icon" href="#">
     <style>
+        /* 공통 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        li {
+            list-style: none;
+        }
+
+        body {
+            font-size: 14px;
+            color: #333;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* 레이아웃 */
+        #innerHeader,
+        #slide,
+        #content,
+        #innerFooter {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 100px;
+            border-bottom: 2px solid rgba(0, 199, 60, 0.5);
+        }
+
+        #slide {
+            height: 300px;
+        }
+
+        #content {
+            height: 200px;
+            padding-top: 20px;
+        }
+
+        footer {
+            height: 100px;
+            background: #737373;
+        }
+
+        /* A영역 */
+        #innerHeader {
+            padding-top: 30px;
+        }
+
+        /* navigation */
+        nav {
+            z-index: 1;
+            position: relative;
+            top: -8px;
+            width: 1200px;
+            height: 30px;
+        }
+
+        .nav_bg {
+            position: absolute;
+            left: 0;
+            top: 32px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        /* 1depth: main */
+        .main {
+            position: absolute;
+            top: 0px;
+            right: 0;
+            width: 640px;
+            height: 30px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            background: #333;
+        }
+
+        .main>li {
+            position: relative;
+            float: left;
+            width: 160px;
+        }
+
+        .main>li>a {
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+            color: #fff;
+        }
+
+        .main>li:hover>a {
+            background: #ccc;
+            color: #333;
+        }
+
+        .main>li:hover>a:after {
+            position: absolute;
+            top: 30px;
+            left: calc(50% - 15px);
+            content: '';
+            height: 0;
+            border-bottom: 10px solid;
+            border-left: 15px solid rgba(0, 0, 0, 0);
+            border-right: 15px solid rgba(0, 0, 0, 0);
+            color: #ccc;
+            transform: rotate(-180deg);
+        }
+
+        /* 2depth: sub */
+        .sub {
+            display: none;
+            padding-top: 15px;
+        }
+
+        .sub a {
+            display: block;
+            width: 100%;
+            color: #ccc;
+            font-size: 14px;
+            font-weight: 300;
+            padding: 3px 0px;
+        }
+
+        .sub a:hover {
+            background: rgba(255, 0, 0, 0.5);
+        }
     </style>
 </head>
 
 <body>
-    <h1>일정 시간 간격으로 값 증감 시키기</h1>
-    <p>콘솔패널을 열어 확인하세요</p>
-    <button id="btn1">증가 실행</button>
-    <button id="btn2">증가 정지</button>
-    <button id="btn3">감소 실행</button>
-    <button id="btn4">감소 정지</button>
+    <div id="wrap">
+        <header>
+            <div id="innerHeader">
+                <h1><a href="#"><img src="images/logo.png" alt="대한투어 로고"></a></h1>
+                <nav>
+                    <div class="nav_bg"></div>
+                    <ul class="main">
+                        <li><a href="#">해외여행</a>
+                            <ul class="sub">
+                                <li><a href="#">동남아/대만</a></li>
+                                <li><a href="#">중국/홍콩</a></li>
+                                <li><a href="#">유럽/두바이</a></li>
+                                <li><a href="#">미주/하와이</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">국내여행</a>
+                            <ul class="sub">
+                                <li><a href="#">서울/경기권</a></li>
+                                <li><a href="#">충청권</a></li>
+                                <li><a href="#">전라권</a></li>
+                                <li><a href="#">경상/강원권</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">제주도</a>
+                            <ul class="sub">
+                                <li><a href="#">버스여행</a></li>
+                                <li><a href="#">자유여행</a></li>
+                                <li><a href="#">호텔/펜션</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">렌트카</a>
+                            <ul class="sub">
+                                <li><a href="#">국내 렌트카</a></li>
+                                <li><a href="#">국외 렌트카</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    
-    
-    
-    
-    <script>
-    
-    let increase = 0
-        decrease = 0
-    
-    const btn1 = document.getElementById('btn1')
-    const btn2 = document.getElementById('btn2')
-    const btn3 = document.querySelector('#btn3')
-    const btn4 = document.querySelector('#btn4')
 
 
-    let auto1
-
-    btn1.onclick = function(){
-        auto1 = setInterval (add, 1000)
-    };
-    btn2.onclick = function(){
-        clearInterval (auto1)
-    };
-    
-    btn3.onclick = play;
-
-    btn4.onclick = stop
-
-    function play(){
-        auto1 = setInterval(sub, 1000);
-    }
-    function stop(){
-        clearInterval(auto1);
-    }
-    
-    function add() {
-        increase++;
-        console.log(increase);
-    }
-
-    function sub() {
-        decrease--;
-        console.log(decrease)
-    }
-
-    console.log(increase)
-        
-
-    </script>
 </body>
 
 </html>
