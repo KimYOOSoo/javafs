@@ -24,11 +24,13 @@
          //Tue May 30 2023 10:07:02 GMT+0900 (한국 표준시)
         console.log(d);
         //년(yyyy) 
-        document.write(d.getFullYear(), '<br>');
+        document.getElementsByClassName('yy').(d.getFullYear(), '<br>');
         //월(mm): 0(1월) ~ 11(12월)
-        document.write(d.getMonth() + 1, '<br>');
+        document.getElementsByClassName('mm')(d.getMonth() + 1, '<br>');
         //일(dd)
-        document.write(d.getDate(), '<br>');
+        document.getElementsByClassName('dd')(d.getDate(), '<br>');
+
+
         //요일(week): 0(일) ~ 6(토)
         //if를 사용하여 요일을 일요일 ~ 토요일까지 문자열로 표시하기
         
