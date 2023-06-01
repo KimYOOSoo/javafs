@@ -49,7 +49,7 @@
 
         box.on('mousewheel', function(e){
             // 마우스휠을 내리면 e.deltaY가 양수, 아니면 음수
-            if (e.deltaY > 0) {
+            if (e.deltaY > 100) {
                 $(this).css({background: 'red'});
                 txt.html('<h2>마우스휠을 내렸다.</h2>');
             } else {

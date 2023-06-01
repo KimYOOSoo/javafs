@@ -34,26 +34,30 @@
 
     <script>
         /* 
+            $('선택자').val() ~ 
             요소.value ~ input에 입력된 값 반환
             요소.value = 값 ~ input에 입력된 값 설정
         */
 
-        const btn = document.querySelector('button');
-        const inputTag = document.querySelector('input');
+        const age = $('input');
+        const btn = $('button');
 
-        btn.onclick = function () {
-            let num = inputTag.value;
+        btn.click(adult)
 
-            if (num == '') {
-                alert('아무런 정보도 입력하지 않으셨습니다.');
-            } else if (num >= 19) {
-                alert('당신은 성인입니다.');
-            } else if (num < 19) {
-                alert('당신은 미성년 입니다.');
+        function adult() {
+            let txt
+            if (age.val() >= 19) {
+                txt = '당신은 성인입니다');
+            } else if (age.val() < 19 && age.val() >= 0) {
+                txt = '당신은 미성년입니다.'
+            } else if (age.val() === '' || age.val() < 1) {
+                txt = '입력하지 않았거나 0미만으로 입력하셨습니다. 다시 입력해주세요'
             } else {
-                alert('숫자만 입력해주세요.');
+                txt = '문자로 입력하셨습니다. 숫자로 입력해주세요.
             }
+            alert(txt);
         };
+
     </script>
 </body>
 
