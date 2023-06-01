@@ -14,10 +14,12 @@
             box-sizing: border-box;
         }
 
+        html {
+            font-size: 10px;
+        }
+
         #wrap {
             margin: 100px 30px 0;
-            top: 100px;
-            margin: 30px;
             text-align: center;
         }
 
@@ -36,93 +38,66 @@
             padding: 8px;
             font-size: 20px;
         }
-        #member{
-            left: 0;
+
+        #member {
             position: absolute;
+            left: 0;
+            width: 100%;
             bottom: 100px;
-            color: #777;
             font-size: 1.5rem;
-            width: 100%
+            color: #777;
         }
     </style>
 </head>
 
 <body>
     <div id="wrap">
-        <h1>묶찌빠</h1>
+        <h1>묵찌빠</h1>
         <div id="result">결과가 궁금하시죠?</div>
         <button id="againBtn">다시하기</button>
         <button id="logoutBtn">게임종료</button>
         <p>아이디와 패스워드를 입력후 로그인하세요.</p>
-        <p id="member">계정이 없으신가요? <a href="93-1_member.html">가입하기</a></p>
+        <p id="member">계정이 없으신가요? <a href="93_member.html">가입하기</a></p>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
     <script>
         const againBtn = document.querySelector('#againBtn');
         const logoutBtn = document.querySelector('#logoutBtn');
         const result = document.querySelector('#result');
-         document.write('<h2>컴퓨터 가위, 바위, 보 맞추기</h2>');
-
-        let game = prompt('가위, 바위, 보 중 쓰세요', '가위');
-        var gameNum;
+        let game = prompt('가위, 바위, 보 셋 중 하나만 입력하세요.', '');
 
         switch (game) {
             case '가위':
-                gameNum = 1; break;
+                gameNum = 1;
+                break;
             case '바위':
-                gameNum = 2; break;
+                gameNum = 2;
+                break;
             case '보':
-                gameNum = 3; break;
-            default: alert('가위, 바위, 보 셋 중 하나만 입력하세요');
-                // 브라우저 새로고침
-                location.reload();    
+                gameNum = 3;
+                break;
+            default:
+                alert('가위, 바위, 보 셋 중 하나만 입력하세요.');
+                location.reload();
         }
-        // 1, 2, 3 중 하나
+
+        // 1~3 사이 정수
+        // Math.floor(Math.random() * 3) + 1)
         let com = Math.floor(Math.random() * 3) + 1;
-    
-        document.write('<img src=\'../assets/math_img_' + com + '.jpg\'>');
+        document.write('<img src="../assets/math_img_' + com + '.jpg" alt="가위"><br>');
 
-        // 1 ~ 3 사이정수
-        // Math.floor(Math.random()* 3 + 1)
-        
-
-        if (gameNum == com) {
-            result.innerHTML = '<h2>축하합니다. 맞추었습니다.</h2>'
-        } else  {
-            result.innerHTML = '<h2>틀렸습니다. 다음 기회에 ...</h2>'
+        if (gameNum === com) {
+            result.innerHTML = '<p>축하합니다. 맞추었습니다.</p>';
+        } else {
+            result.innerHTML = '<p>틀렸습니다. 다음 기회에...</p>';
         }
-        logoutBtn.onclick = function(){
-            location.href = '93_login.html'
-        };
 
         againBtn.onclick = function(){
             location.reload();
         };
-
-        
-
-
-        /*  login(userId, userPw);
-  */
-        /* const age = $('input');
-        const btn = $('button');
-
-        btn.click(adult);
-
-        function adult() {
-            let txt;
-            if (age.val() >= 19) {
-                txt = '당신은 성인입니다';
-            } else if (age.val() < 19 && age.val() >= 0) {
-                txt = '당신은 미성년입니다.';
-            } else if (age.val() === '' || age.val() < 1) {
-                txt = '입력하지 않았거나 0미만으로 입력하셨습니다. 다시 입력해주세요';
-            } else {
-                txt = '문자로 입력하셨습니다. 숫자로 입력해주세요.'
-            }
-            alert(txt);
-        }; */
-
+        logoutBtn.onclick = function(){
+            location.href = '93_login.html';
+        };
     </script>
 </body>
 

@@ -7,15 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .blue {color:blue;}
-        .red {color:red;}
+        .blue {
+            color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .aqua {
+            color: aqua;
+        }
     </style>
 </head>
 
 <body>
+    <h1>이미지 갤러리</h1>
+    <div id="galleryZone">
+        <p>
+            <!-- 인라인 스크립트 -->
+            <button onclick="gallery(1);">1</button>
+            <button onclick="gallery(2);">2</button>
+            <button onclick="gallery(3);">3</button>
+        </p>
+        <p><img src="../assets/pic_1.jpg" alt="" id="photo"></p>
+    </div>
     <script>
-       
-    </script> 
+   
+   const imgTag = document.getElementById('photo');
+
+   function gallery(direct) {imgTag.setAttribute('src', '../assets/pic_' + direct + '.jpg' );}
+
+   
+    </script>
 </body>
 
 </html>

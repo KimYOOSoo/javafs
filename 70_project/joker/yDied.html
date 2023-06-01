@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+    <style>
+        /* 가로 해상도: 390px */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #424242;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        #wrap {
+            text-align: center;
+        }
+
+        img{
+            margin-top: 120px;
+        }
+
+
+        button {
+            width: 225px;
+            height: 95rpx;
+            margin: 16px 8px;
+            padding: 8px;
+            font-size: 30px;
+        }
+
+        #Btn{
+            margin-top: 56px;
+            background: #C00003;
+            color: #000;r
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <img src="images/you_died.png" alt="choice">
+        <button id="Btn">YOU DIED!</button>
+    </div>
+    <script>
+        const againBtn = document.querySelector('#againBtn');
+        const logoutBtn = document.querySelector('#logoutBtn');
+        const result = document.querySelector('#result');
+        
+        var gameNum;
+
+        switch (game) {
+            case '가위':
+                gameNum = 1; break;
+            case '바위':
+                gameNum = 2; break;
+            case '보':
+                gameNum = 3; break;
+            default: alert('가위, 바위, 보 셋 중 하나만 입력하세요');
+                // 브라우저 새로고침
+                location.reload();
+        }
+        // 1, 2, 3 중 하나
+        let com = Math.floor(Math.random() * 3) + 1;
+
+        document.write('<img src=\'../assets/math_img_' + com + '.jpg\'>');
+
+        // 1 ~ 3 사이정수
+        // Math.floor(Math.random()* 3 + 1)
+
+
+        if (gameNum == com) {
+            result.innerHTML = '<h2>축하합니다. 맞추었습니다.</h2>'
+        } else {
+            result.innerHTML = '<h2>틀렸습니다. 다음 기회에 ...</h2>'
+        }
+        logoutBtn.onclick = function () {
+            location.href = '93_login.html'
+        };
+
+        againBtn.onclick = function () {
+            location.reload();
+        };
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
