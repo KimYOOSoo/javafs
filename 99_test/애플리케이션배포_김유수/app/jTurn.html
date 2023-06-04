@@ -47,16 +47,22 @@
         <img src="images/joker.png" alt="choice">
         <button id="Btn">FIRE</button>
     </div>
+    <audio autoplay>
+        <source src="mp3/tension.mp3" type="audio/ogg">
+       오디오지원이 안될시 표시
+    </audio>
     <script>
 
         let bullet = location.href.split('?')[1]
         console.log(bullet)
 
         let fire = document.querySelector('#Btn')
+    
 
         fire.onclick = function () {
             if (bullet.indexOf(1) == 0) {
                 location.href = 'yWin.html'
+
             } else {
                 location.href = 'jSurvived.html?' + bullet
             }

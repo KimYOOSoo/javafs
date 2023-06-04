@@ -5,46 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-         li {
-            font-size: 30px;
-            margin-left: 50px;
-        }
-
-        div {
-            width: 400px;
-            height: 400px;
-            margin: 50px;
-            background: #555;
-            font-size: 50px;
-            color: #fff;
+        li {
+            font-size: 20px;
+            color: #555;
+            margin: 20px;
         }
     </style>
-
 </head>
 
 <body>
     <ul>
-        <li>red</li>
-        <li>blue</li>
-        <li>green</li>
-        <li>pink</li>
+        <li id="blue">목록1</li>
+        <li>목록2</li>
+        <li class="red">목록3</li>
+        <li class="red">목록4</li>
     </ul>
-
-    <div></div>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script>
-       const array = [0, 1, 2, 3]
+        const blue = document.querySelector('#blue')
+        const red = document.querySelectorAll('red')
 
-       array.shift()
+        blue.style.color = 'blue'
+        red.stlye.dolor = 'red'
 
-       document.write(array)
-
+        
     </script>
-</body>
+
 
 </html>

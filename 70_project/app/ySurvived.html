@@ -48,19 +48,25 @@
         <img src="images/you_survived.png" alt="choice">
         <button id="Btn">YOU<br>SURVIVED</button>
     </div>
+    <audio autoplay>
+        <source src="mp3/empty.mp3" type="audio/ogg">
+       오디오지원이 안될시 표시
+    </audio>
     <script>
-        // 총알 이어받기
         var bullet = location.href.split('?')[1];
-
-        // 첫번째 인덱스 제거
         bullet = bullet.substring(2)
         console.log(bullet)
 
-        // 다음 턴 이동
         let sur = document.querySelector('#Btn')
         sur.onclick = function(){
             location.href = 'jTurn.html?' + bullet
         }
+
+
+
+
+
+
     </script>
 </body>
 

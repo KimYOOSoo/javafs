@@ -80,12 +80,17 @@
         <h1>Russian Roulette</h1>
         <img src="images/login.png" alt="login">
         <input type="text" placeholder="ID" id="loginId">
-        <input type="text" placeholder="PW" id="loginPw">
+        <input type="password" placeholder="PW" id="loginPw">
         <button>LOG_IN</button>
         <p></p>
         <p id="member">
         <h3>Do you want to hang out with me?</h3><a href="join.html">JOIN</a></p>
     </div>
+    <audio autoplay>
+        <source src="mp3/openeing.mp3" type="audio/ogg">
+       오디오지원이 안될시 표시
+    </audio>
+    
     <script>
         // 데이터베이스(Database, DB)
         let temp = location.href.split('?');

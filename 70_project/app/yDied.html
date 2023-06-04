@@ -37,6 +37,10 @@
                 transform: rotate(-1deg);
             }
         }
+
+
+
+
         button {
             width: 225px;
             height: 95px;
@@ -58,14 +62,26 @@
         <img src="images/you_died.png" alt="choice">
         <button id="Btn">YOU DIED!</button>
     </div>
+    <audio autoplay>
+        <source src="mp3/shot.mp3" type="audio/ogg">
+       오디오지원이 안될시 표시
+    </audio>
+    <audio autoplay>
+        <source src="mp3/laugh.mp3" type="audio/ogg">
+       오디오지원이 안될시 표시
+    </audio>
     <script>
-        // 조커 승리
         const re = document.querySelector('#Btn')
 
-        // 처음 화면으로
         re.onclick = function () {
             location.href = 'index.html'
         }
+
+
+
+
+
+
     </script>
 </body>
 
