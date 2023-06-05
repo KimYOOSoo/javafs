@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    제이쿼리
+    $(document).ready(function){};
+    $(function){};
+
+    자바스크립트
+    document.addEventListener('DOMContentLoaded', function(){});
+ -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+
+
+
+<body>
+    <h1>디지털 시계</h1>
+    <div class="clock">
+        <span class="yy">년</span>
+        <span class="mm">월</span>
+        <span class="dd">일</span>
+        <span class="we">요일</span>
+        <span class="hh">시</span>
+        <span class="mi">분</span>
+        <span class="ss">초</span>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+
+        const yArea = document.querySelector('.yy');
+        const oArea = document.querySelector('.mm');
+        const dArea = document.querySelector('.dd');
+        const wArea = document.querySelector('.we');
+        const hArea = document.querySelector('.hh');
+        const mArea = document.querySelector('.mi');
+        const sArea = document.querySelector('.ss');
+
+        setInterval(timer, 1000)
+
+        function timer() {
+            let d = new Date();
+            yArea.innerHTML = d.getFullYear() + '년';
+            oArea.innerHTML = d.getMonth() + 1 + '월';
+            dArea.innerHTML = d.getDate() + '일';
+            
+            
+                
+            let wArea = d.getDay();
+
+            if (week == 0) {
+                week = '일요일';
+            }
+            else if (week === 1) {
+                week = '월요일';
+            }
+            else if (week === 2) {
+                week = '화요일';
+            }
+            else if (week === 3) {
+                week = '수요일';
+            }
+            else if (week === 4) {
+                week = '목요일';
+            }
+            else if (week === 5) {
+                week = '금요일';
+            }
+            else {
+                week = '토요일';
+            }
+
+            let hArea = d.getHours();
+            if (hh >= 13) {
+                hh = hh - 12;
+                document.write('오전' + hh + '시', '<br>')
+            } else {
+                document.write('오후' + hh + '시', '<br>')
+            }
+       
+            let mArea = d.getMinutes()
+            let sArea = d.getSeconds()
+            if (mm < 10 || ss < 10) {
+                mm = '0' + mm;
+                ss = '0' + ss;
+            }}
+        });
+    </script>
+</body>
+
+</html>
