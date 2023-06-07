@@ -69,8 +69,8 @@
         const bigImg = document.querySelector('#pic');
         const thumbImg = document.querySelectorAll('.small')
 
-        let gallery = function() {
-            let imgSrc = this.getAttribute('src')
+        let gallery = function(e) {
+            let imgSrc = e.target.getAttribute('src')
             bigImg.setAttribute('src', imgSrc)
         };
         
