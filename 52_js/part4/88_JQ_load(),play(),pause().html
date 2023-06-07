@@ -33,8 +33,13 @@
         <video>
             <source src="../../70_project/images/dream.mp4" type="video/mp4">
         </video>
-    </div>
 
+    <div class="box">
+        <video>
+            <source src="../../70_project/images/dream.mp4" type="video/mp4">
+        </video>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         /*
             비디오요소.load() ~ 비디오 불러오기 (처음으로)
@@ -51,30 +56,30 @@
             비디오 영상이 일시정지되게 하시오.
 
             이벤트: click
-            메서드: load(), play(), pause()
+            메서드: load(), play(), pause(), get()
 
         */
 
 
-        const load = document.querySelector('.load')
-        const play = document.querySelector('.play')
-        const pause = document.querySelector('.pause')
-        const video = document.querySelector('video')
+        const load = $('.load');
+        const play = $('.play');
+        const pause = $('.pause');
+        const video = $('video').get(1);
 
         // 비디오 처음 상태로
-        load.onclick = function(){
+        load.click(function(){
             video.load()
-        }
+        })
 
         // 비디오 실행
-        play.onclick = function(){
+        play.click(function(){
             video.play()
-        }
+        })
 
         // 비디오 일시정지
-        pause.onclick = function(){
+        pause.click(function(){
             video.pause()
-        }
+        })
         
 
 

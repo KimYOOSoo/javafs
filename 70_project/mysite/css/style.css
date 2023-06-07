@@ -28,11 +28,11 @@ header i {
 /* section1 */
 #home {
     position: relative;
-    height: 930px;
-    background: url(../images/parallax1.png) no-repeat 50% 50%/cover fixed;
+    background: url(../images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
+    height: 1280px;
 }
 /* 요소를 부모 안에 정가운데 배치 */
-.logo {
+.clock {
     position: absolute;
     left: 50%;
     top: 50%;

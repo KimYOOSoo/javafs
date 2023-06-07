@@ -23,7 +23,7 @@
     <button>버튼</button>
     <span>offsetTop</span>
     <div></div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script>
         /* 
             요소.offsetTop ~ 창 끝에서 요소의 y축 위치 반환
@@ -32,20 +32,21 @@
         /* 
             버튼을 클릭하면
             span요소에 div의 창으로 수직 위치를 span 요소에 표시
-            속성: offsetTop, innerText
             이벤트: click
+            메서드: offset(), text()
+            속성: top
         */
 
-        const btn = document.querySelector('button')
-        const box = document.querySelector('div')
-        const val = document.querySelector('span')
+        const btn = $('button')
+        const box = $('div')
+        const val = $('span')
         //btn을 클릭하면 함수 실행
-        btn.onclick = function(){
+        btn.click(function(){
         // 박스 창으로부터 수직위치
-          let ot = box.offsetTop;
+          let ot = box.offset().top;
         // span 요소의 내용으로 ot 지정
-          val.innerText = ot;
-        }
+          val.text(ot);
+        })
 
     </script>
 </body>
