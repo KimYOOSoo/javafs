@@ -174,9 +174,10 @@
             }; //onwheel
         } //for문
         $('html').stop().animate({scrollTop: 0});
-        $('#indicator a').click(function(){
+        $('#indicator a').click(function(e){
+            e.preventDefault
             $('#indicator a').removeClass('on');
-            $(this).addClass('on');
+            $('#indicator a').eq(e).addClass('on');
         });
 
         

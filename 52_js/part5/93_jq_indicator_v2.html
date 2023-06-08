@@ -103,6 +103,7 @@
 
         $('#indicator a').click(function(e){
             //a 태그의 기본이벤트 제거
+            e.preventDefault
             let idx = $(this).parent().index();
             console.log(idx);
             let posY = $('.section').eq(idx).offset().top;
