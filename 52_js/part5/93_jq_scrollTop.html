@@ -8,32 +8,28 @@
     <title>fullPage</title>
     <style>
         * {
-            margin: 0 auto;
-
+            margin:0;
         }
-
         #fullpage div {
-            height: 100vh
+            height: 100vh;
         }
 
         #section1 {
-            background: rgb(173, 173, 255);
+            background: #FF5F45;
         }
 
         #section2 {
-            background: rgb(44, 44, 167);
+            background: #0798EC;
         }
 
         #section3 {
-            background: rgb(7, 7, 114);
+            background: #FC6C7C;
         }
 
         #section4 {
-            background: rgb(1, 1, 58);
+            background: #FEC401;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -47,40 +43,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script>
-        /* 
-             마우스휠 조정시 위아래로 한 칸씩 섹션 이동시킨다.
- 
-             이벤트: mousewheel
-             메서드: next() , offset().top, prev(), stop().animate(), 
-             속성: top, scrollTop
-             제어문: if
- 
-             // mousewheel 이벤트 형식
-             $('선택자').mousewheel(funtion(e,delta){
-                 if (delta > 0) {
-                     // 마우스 휠을 위로 올림
-                 } if else (delta <0)
-                     // 마우스 휠을 아래로 내림
-             }); 
-        */
-        let idx = 0;
 
-        $('.section').mousewheel(function (e, delta) {
-            if (delta > 0) {
+        /* 
+            마우스휠 조정시 위아래로 한 칸씩 섹션이동시킨다.
+            
+            이벤트: mousewheel
+            메서드: next(), prev(), offset(), animate(), stop()
+            속성: top, scrollTop
+            제어문: if
+
+            // mousewheel 이벤트 형식
+            $('선택자').mousewheel(function(e, delta){
+                if (delta > 0) {
+                    // 마우스휠을 위로 올림
+                } else if (delta < 0) {
+                    // 마우스휠을 아래로 내림
+                }
+            });
+        */
+        
+        let idx = 0;
+        $('.section').mousewheel(function (e, delta){
+            if (delta > 0){
                 let prev = $(this).prev().offset().top;
-                //css({속성:값})
-                //animate({속성:값})
-                $('html').stop().animate({ scrollTop: prev })
+                console.log(prev);
+                $('html').stop().animate({scrollTop:prev})
             } else if (delta < 0) {
                 let next = $(this).next().offset().top;
-                //css({속성:값})
-                //animate({속성:값})
-                $('html').stop().animate({ scrollTop: next })
+                console.log(next);
+                $('html').stop().animate({scrollTop: next})
             }
-        });
+         });
+
+
 
     </script>
-
 </body>
 
 </html>

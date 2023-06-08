@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullPage</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+
+        #fullpage div {
+            height: 100vh;
+        }
+
+        #section1 {
+            background: #FF5F45;
+        }
+
+        #section2 {
+            background: #0798EC;
+        }
+
+        #section3 {
+            background: #FC6C7C;
+        }
+
+        #section4 {
+            background: #FEC401;
+        }
+
+        #indicator {
+            position: fixed;
+            right:0;
+            top:50%;
+            transform: translateY(-50%);
+            color: #fff;
+            text-indent: -9999em;
+            width:50px;
+            height:150px;
+        }
+        #indicator li button {
+            display: block;
+            width:12px;
+            height:12px;
+            margin: 20px 0;
+            border-radius: 50%;
+            background: #fff;
+            text-indent: -9999px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div id="section1" class="section">섹션1</div>
+        <div id="section2" class="section">섹션2</div>
+        <div id="section3" class="section">섹션3</div>
+        <div id="section4" class="section">섹션4</div>
+    </div>
+    <ul id="indicator">
+        <li><button>section1</button></li>
+        <li><button>section2</button></li>
+        <li><button>section3</button></li>
+        <li><button>section4</button></li>
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+    <script>
+        const sec1 = document.querySelector("#section1")
+        const sec2 = document.querySelector("#section2")
+        const sec3 = document.querySelector("#section3")
+        const sec4 = document.querySelector("#section4")
+        
+        const liTag1 = document.querySelectorAll("li")[0]
+        const liTag2 = document.querySelectorAll("li")[1]
+        const liTag3 = document.querySelectorAll("li")[2]
+        const liTag4 = document.querySelectorAll("li")[3]
+        
+        liTag1.onclick = function(){
+        sec1.scrollIntoView({behavior:'smooth'});};
+        liTag2.onclick = function(){
+        sec2.scrollIntoView({behavior:'smooth'});};
+        liTag3.onclick = function(){
+        sec3.scrollIntoView({behavior:'smooth'});};
+        liTag4.onclick = function(){
+        sec4.scrollIntoView({behavior:'smooth'});};
+      
+
+        
+        
+            
+        
+
+    </script>
+</body>
+
+</html>

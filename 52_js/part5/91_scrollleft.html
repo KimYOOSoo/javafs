@@ -8,11 +8,20 @@
     <title>fullPage</title>
     <style>
         * {
-            margin: 0 auto;
+            margin: 0
 
+        }
+        body{
+            overflow: hidden;
+        }
+
+        #fullpage {
+            display: flex;
+            
         }
 
         #fullpage div {
+            flex: 0 0 100%;
             height: 100vh
         }
 
@@ -67,15 +76,15 @@
 
         $('.section').mousewheel(function (e, delta) {
             if (delta > 0) {
-                let prev = $(this).prev().offset().top;
+                let prev = $(this).prev().offset().left;
                 //css({속성:값})
                 //animate({속성:값})
-                $('html').stop().animate({ scrollTop: prev })
+                $('html').stop().animate({scrollLeft:prev });
             } else if (delta < 0) {
-                let next = $(this).next().offset().top;
+                let next = $(this).next().offset().left;
                 //css({속성:값})
                 //animate({속성:값})
-                $('html').stop().animate({ scrollTop: next })
+                $('html').stop().animate({scrollLeft: next});
             }
         });
 
