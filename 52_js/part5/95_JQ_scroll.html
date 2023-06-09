@@ -27,7 +27,7 @@
             background: wheat url(../../70_project/mysite/images/parallax1.jpg) no-repeat 50% 50%/ cover fixed;
         }
 
-        #section3{
+        #section3 {
             background: wheat url(../../70_project/mysite/images/parallax1.jpg) no-repeat 50% 50%/ cover;
         }
 
@@ -80,16 +80,16 @@
             display: flex;
         }
 
-        #product > div {
+        #product>div {
             position: absolute;
             transition: .3s;
         }
 
-        #product > div:hover {
+        #product>div:hover {
             transform: scale(1.2);
             z-index: 1;
         }
-        
+
         #product .prod1 {
             top: 90px;
             left: 50px;
@@ -99,16 +99,16 @@
             transform: rotate(-18deg);
         }
 
-        #product .prod2{
+        #product .prod2 {
             top: 0;
             left: 278px;
             width: 250px;
             height: 350px;
             background: green;
         }
-    
-        
-        #product .prod3{
+
+
+        #product .prod3 {
             top: 70px;
             left: 495px;
             width: 325px;
@@ -116,11 +116,10 @@
             background: blue;
             transform: rotate(18deg)
         }
-
-
     </style>
 </head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
 <body>
     <section id="section1">
         <h2>섹션1</h2>
@@ -163,17 +162,17 @@
         $(window).scroll(function () {
             // 스크롤바를 스크롤한 양을 st에 저장
             let st = $(this).scrollTop;
-            let stVal = 600;
+            let stVal = 300;
             console.log(st)
 
             if (st >= stVal) {
                 //css(속성:값)
                 //css(속성:값, 속성: 값 ...)
-                Btn.css({opacity: =1})
-                txtBox.css({left = 360 + px});
+                Btn.css({opacity:1 })
+                txtBox.css({left:'360px'});
             } else {
-                Btn.css({opacity = 0});
-                txtBox.css.{(left = '360 + px;'});
+                Btn.css({opacity:0 });
+                txtBox.css({left:'360px'});
             }
         });
 
