@@ -19,10 +19,9 @@ $(function () {
     //섹션1 - 캐로셀
     $('.slider').bxSlider({
         auto: true,
-        autoControls: true,
         stopAutoOnClick: true,
-        pager: true,
-        slideWidth: 600
+        /* autoControls: true, */
+        /* pager: false, */
       });
 
 
