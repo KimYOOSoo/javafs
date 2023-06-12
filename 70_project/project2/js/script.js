@@ -16,7 +16,7 @@ const liTag = document.querySelectorAll('#event li')
 let currentSlide = 0
 
 nextBtn.onclick = function () {
-  if (currentSlide > 5 || currentSlide < 0) {
+  if (currentSlide > 5 ) {
     currentSlide = -1
   }
   console.log(currentSlide)
@@ -28,8 +28,8 @@ nextBtn.onclick = function () {
 
 
 prevBtn.onclick = function () {
-  if (currentSlide > 5 || currentSlide < 0) {
-    currentSlide = -1
+  if (currentSlide < 0) {
+    currentSlide =  1
   }
   console.log(currentSlide)
   currentSlide--
